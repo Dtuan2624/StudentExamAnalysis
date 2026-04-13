@@ -1,56 +1,87 @@
-🎓 Phân tích và dự đoán kết quả học tập của học sinh
-📌 Giới thiệu
+##  Student Exam Analysis
+###  Giới thiệu
 
-Dự án này tập trung vào việc phân tích các yếu tố ảnh hưởng đến kết quả học tập của học sinh và xây dựng mô hình dự đoán bằng Python. Mục tiêu là hiểu rõ hơn các yếu tố tác động đến việc học và hỗ trợ cải thiện kết quả học tập.
+Student Exam Analysis là một project Python dùng để phân tích dữ liệu kết quả học tập của sinh viên.
+Dự án giúp xử lý dữ liệu thô, trực quan hóa và rút ra insight về các yếu tố ảnh hưởng đến điểm số.
 
-🎯 Mục tiêu
-Phân tích các yếu tố ảnh hưởng đến kết quả học tập
-Tìm mối quan hệ giữa thời gian học, chuyên cần và điểm số
-Xây dựng mô hình dự đoán kết quả học tập
-Đánh giá độ chính xác của mô hình
-📊 Dữ liệu
+###  Tính năng chính
+- Đọc dữ liệu từ file CSV
+- Làm sạch dữ liệu (missing values, duplicates, format)
+- Phân tích thống kê cơ bản
+- Trực quan hóa dữ liệu (biểu đồ)
+- Tìm mối quan hệ giữa các yếu tố và kết quả thi
 
-Dữ liệu bao gồm các thông tin như:
+### Cấu trúc project
+```
+StudentExamAnalysis/
+│── data/
+│   ├── raw/                     # Dữ liệu gốc
+│   └── processed/              # Dữ liệu sau khi xử lý
+│
+│── scripts/
+│   ├── clean_data.py           # Làm sạch dữ liệu
+│   ├── analyze_data.py         # Phân tích dữ liệu
+│   └── visualize.py            # Vẽ biểu đồ
+│
+│── outputs/                    # Kết quả (ảnh, báo cáo)
+│
+│── main.py                     # Chạy project
+│── requirements.txt            # Thư viện cần thiết
+│── README.md                   # Tài liệu project
+```
+### Cài đặt
+1. Clone repo
+```bash
+git clone https://github.com/your-username/StudentExamAnalysis.git
+cd StudentExamAnalysis
+```
+2. Tạo virtual environment
+```bash
+python -m venv .venv
+```
+3. Kích hoạt môi trường
 
-Điểm số của học sinh
-Thời gian học
-Mức độ chuyên cần
-Một số yếu tố liên quan khác
+- Windows:
+```
+.venv\Scripts\activate
+```
+- Mac/Linux:
+```
+source .venv/bin/activate
+```
+4. Cài thư viện
+```bash
+pip install -r requirements.txt
+```
+### Cách sử dụng
+1. Làm sạch dữ liệu
+python scripts/clean_data.py
+2. Phân tích dữ liệu
+python scripts/analyze_data.py
+3. Trực quan hóa
+python scripts/visualize.py
 
-Dữ liệu được lưu dưới dạng file CSV hoặc Excel.
+### Dataset
+1. File dữ liệu nằm tại:
+- data/raw/StudentPerformanceFactors.csv
+2. Dữ liệu bao gồm:
+- Hours Studied
+- Attendance
+- Sleep Hours
+- Previous Scores
+- Exam Score
+- ...
+### Ví dụ output
+- Biểu đồ phân phối điểm số
+- Biểu đồ so sánh thời gian học vs điểm
+- Heatmap correlation
 
-⚙️ Công nghệ sử dụng
-Python
-NumPy
-Pandas
-Matplotlib
-Seaborn
-Scikit-learn
-🔄 Quy trình thực hiện
-Thu thập dữ liệu
-Tiền xử lý dữ liệu
-Phân tích dữ liệu (EDA)
-Xây dựng mô hình
-Đánh giá mô hình
-Dự đoán và kết luận
-📈 Phương pháp sử dụng
-Thống kê mô tả
-Trực quan hóa dữ liệu
-Hồi quy tuyến tính (Linear Regression)
-Cây quyết định (Decision Tree)
-Phân loại dữ liệu
-🚀 Cách chạy chương trình
-Clone project:
-git clone https://github.com/your-username/your-repo.git
-Cài thư viện:
-pip install numpy pandas matplotlib seaborn scikit-learn
-Chạy chương trình:
-python main.py
-📌 Kết quả đạt được
-Xác định được các yếu tố ảnh hưởng đến kết quả học tập
-Xây dựng được mô hình dự đoán
-Đưa ra một số nhận xét và hướng cải thiện việc học
-📎 Kết luận
+### Công nghệ sử dụng
+- Python 
+- Pandas
+- NumPy
+- Matplotlib / Seaborn
 
-Dự án cho thấy việc áp dụng phân tích dữ liệu và học máy có thể giúp dự đoán kết quả học tập và hỗ trợ cải thiện phương pháp học tập một cách hiệu quả.
-https://drive.google.com/drive/u/1/folders/1TSVZH5y0fXwndj3t-0bkqQfI3AMUP3mE
+### License
+
+Dự án phục vụ mục đích học tập.
