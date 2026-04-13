@@ -53,3 +53,4 @@ Xây dựng được mô hình dự đoán
 📎 Kết luận
 
 Dự án cho thấy việc áp dụng phân tích dữ liệu và học máy có thể giúp dự đoán kết quả học tập và hỗ trợ cải thiện phương pháp học tập một cách hiệu quả.
+https://drive.google.com/drive/u/1/folders/1TSVZH5y0fXwndj3t-0bkqQfI3AMUP3mE
