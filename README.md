@@ -34,7 +34,7 @@ StudentExamAnalysis/
 ### Cài đặt
 1. Clone repo
 ```bash
-git clone https://github.com/your-username/StudentExamAnalysis.git
+git clone https://github.com/Dtuan2624/StudentExamAnalysis.git
 cd StudentExamAnalysis
 ```
 2. Tạo virtual environment
