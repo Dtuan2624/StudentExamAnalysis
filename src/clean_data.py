@@ -45,9 +45,3 @@ def clean_dataset(input_path, output_path):
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     df.to_csv(output_path, index=False)
     print("Clean dataset saved to:", output_path)
-
-# Example usage
-if __name__ == "__main__":
-    input_csv = "D:/IHatePython/StudentExamAnalysis/data/raw/StudentPerformanceFactors.csv"
-    output_csv = "D:/IHatePython/StudentExamAnalysis/data/processed/StudentPerformance_cleaned.csv"
-    clean_dataset(input_csv, output_csv)
