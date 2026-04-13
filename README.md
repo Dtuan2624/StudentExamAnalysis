@@ -1,16 +1,17 @@
 ##  Student Exam Analysis
+---
 ###  Giới thiệu
-
+---
 Student Exam Analysis là một project Python dùng để phân tích dữ liệu kết quả học tập của sinh viên.
 Dự án giúp xử lý dữ liệu thô, trực quan hóa và rút ra insight về các yếu tố ảnh hưởng đến điểm số.
-
+---
 ###  Tính năng chính
 - Đọc dữ liệu từ file CSV
 - Làm sạch dữ liệu (missing values, duplicates, format)
 - Phân tích thống kê cơ bản
 - Trực quan hóa dữ liệu (biểu đồ)
 - Tìm mối quan hệ giữa các yếu tố và kết quả thi
-
+---
 ### Cấu trúc project
 ```
 StudentExamAnalysis/
@@ -29,6 +30,7 @@ StudentExamAnalysis/
 │── requirements.txt            # Thư viện cần thiết
 │── README.md                   # Tài liệu project
 ```
+---
 ### Cài đặt
 1. Clone repo
 ```bash
@@ -53,6 +55,7 @@ source .venv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
+---
 ### Cách sử dụng
 1. Làm sạch dữ liệu
 python scripts/clean_data.py
@@ -60,7 +63,7 @@ python scripts/clean_data.py
 python scripts/analyze_data.py
 3. Trực quan hóa
 python scripts/visualize.py
-
+---
 ### Dataset
 1. File dữ liệu nằm tại:
 - data/raw/StudentPerformanceFactors.csv
@@ -71,17 +74,18 @@ python scripts/visualize.py
 - Previous Scores
 - Exam Score
 - ...
+---
 ### Ví dụ output
 - Biểu đồ phân phối điểm số
 - Biểu đồ so sánh thời gian học vs điểm
 - Heatmap correlation
-
+---
 ### Ngôn ngữ sử dụng / Thư viện sử dụng 
 - Python 
 - Pandas
 - NumPy
 - Matplotlib / Seaborn
-
+---
 ### License
 
 Dự án phục vụ mục đích học tập.
