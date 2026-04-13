@@ -76,7 +76,7 @@ python scripts/visualize.py
 - Biểu đồ so sánh thời gian học vs điểm
 - Heatmap correlation
 
-### Công nghệ sử dụng
+### Ngôn ngữ sử dụng / Thư viện sử dụng 
 - Python 
 - Pandas
 - NumPy
