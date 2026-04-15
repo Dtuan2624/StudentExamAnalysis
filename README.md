@@ -1,10 +1,10 @@
 ##  Student Exam Analysis
----
+
 ###  Giới thiệu
----
+
 Student Exam Analysis là một project Python dùng để phân tích dữ liệu kết quả học tập của sinh viên.
 Dự án giúp xử lý dữ liệu thô, trực quan hóa và rút ra insight về các yếu tố ảnh hưởng đến điểm số.
----
+
 ###  Tính năng chính
 - Đọc dữ liệu từ file CSV
 - Làm sạch dữ liệu (missing values, duplicates, format)
@@ -34,7 +34,7 @@ StudentExamAnalysis/
 ### Cài đặt
 1. Clone repo
 ```bash
-git clone https://github.com/your-username/StudentExamAnalysis.git
+git clone https://github.com/Dtuan2624/StudentExamAnalysis.git
 cd StudentExamAnalysis
 ```
 2. Tạo virtual environment
