@@ -117,7 +117,7 @@ def plot_attendance_vs_score(df):
 def plot_motivation_level_distribution(df):
     plt.figure(figsize=(8,6))
     
-    sns.countplot(x='Motivation_Level', data=df, order=['low', 'medium', 'high'])
+    sns.countplot(x='Motivation_Level', data=df, order=['Low', 'Medium', 'High'])
     
     plt.title("Phân phối mức độ động viên", fontsize=14)
     plt.xlabel("Mức độ động viên")
@@ -197,24 +197,45 @@ def plot_prediction_errors(y_actual, y_predicted):
 
 
 # ================== 14. FEATURE IMPORTANCE ==================
-def plot_feature_importance(feature_names, importances):
-    plt.figure(figsize=(10, 6))
-    
-    # Sắp xếp theo độ quan trọng
-    indices = sorted(range(len(importances)), key=lambda i: importances[i], reverse=True)
-    sorted_names = [feature_names[i] for i in indices]
-    sorted_importances = [importances[i] for i in indices]
-    
-    sns.barplot(x=sorted_importances, y=sorted_names)
-    
-    plt.title("Độ Quan trọng của Các Đặc trưng", fontsize=14)
-    plt.xlabel("Độ Quan trọng")
-    plt.ylabel("Đặc trưng")
-    
-    plt.savefig(FIGURE_DIR / 'feature_importance.png', dpi=300, bbox_inches='tight')
-    plt.close()
+def plot_feature_importance(feature_importance, title="Feature Importance"):
+    """
+    Vẽ biểu đồ độ quan trọng của các đặc trưng.
+    Hỗ trợ cả dictionary và tuple (feature_names, importances)
+    """
+    import matplotlib.pyplot as plt
+    import seaborn as sns
+    import pandas as pd
 
+    # Nếu truyền vào là dictionary
+    if isinstance(feature_importance, dict):
+        importance_df = pd.DataFrame({
+            'Feature': list(feature_importance.keys()),
+            'Importance': list(feature_importance.values())
+        })
+    else:
+        # Nếu truyền vào là 2 biến riêng
+        feature_names, importances = feature_importance
+        importance_df = pd.DataFrame({
+            'Feature': feature_names,
+            'Importance': importances
+        })
 
+    # Sắp xếp theo độ quan trọng giảm dần
+    importance_df = importance_df.sort_values('Importance', ascending=False)
+
+    plt.figure(figsize=(10, 8))
+    sns.barplot(
+        x='Importance',
+        y='Feature',
+        data=importance_df,
+        palette='viridis'
+    )
+
+    plt.title(title, fontsize=16)
+    plt.xlabel('Importance Score')
+    plt.ylabel('Features')
+    plt.tight_layout()
+    plt.show()
 # ================== 15. MODEL PERFORMANCE METRICS ==================
 def plot_model_metrics(metrics_dict):
     """
@@ -226,7 +247,7 @@ def plot_model_metrics(metrics_dict):
     metrics_names = list(metrics_dict.keys())
     metrics_values = list(metrics_dict.values())
     
-    bars = sns.barplot(x=metrics_names, y=metrics_values, palette='husl')
+    bars = sns.barplot(x=metrics_names, y=metrics_values, hue=metrics_names, palette='husl', legend=False)
     
     # Hiển thị giá trị trên mỗi cột
     for bar in bars.patches:
@@ -237,7 +258,7 @@ def plot_model_metrics(metrics_dict):
     
     plt.title("Các Chỉ số Hiệu suất Mô hình", fontsize=14)
     plt.ylabel("Giá trị")
-    plt.ylim(0, 1)
+    plt.ylim(0, 1.5)
     
     plt.savefig(FIGURE_DIR / 'model_metrics.png', dpi=300, bbox_inches='tight')
     plt.close()

@@ -96,5 +96,5 @@ def get_feature_importance(model, feature_names):
     Lấy độ quan trọng của các đặc trưng
     """
     importances = model.feature_importances_
-    return feature_names, importances</content>
-<parameter name="filePath">d:\IHatePython\StudentExamAnalysis\src\model.py
+    feature_importance_dict = dict(zip(feature_names, importances))
+    return feature_importance_dict

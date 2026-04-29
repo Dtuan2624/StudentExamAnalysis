@@ -23,7 +23,6 @@ if __name__ == "__main__":
     visualize.plot_avg_score_by_parental_involvement(df)
     visualize.plot_attendance_vs_score(df)
     visualize.plot_motivation_level_distribution(df)
-    visualize.plot_hours_by_learning_disabilities(df)
     visualize.plot_pair_plot(df)
 
     # Mô hình hóa và dự đoán
@@ -46,7 +45,8 @@ if __name__ == "__main__":
     visualize.plot_cv_scores(cv_scores)
 
     # Độ quan trọng của đặc trưng
-    feature_names, importances = model.get_feature_importance(trained_model, X.columns)
-    visualize.plot_feature_importance(feature_names, importances)
+    feature_importance = model.get_feature_importance(trained_model, X.columns)
+    visualize.plot_feature_importance(feature_importance,
+                                      title="Feature Importance - Random Forest")
 
     print("\nĐã hoàn thành phân tích và dự đoán!")

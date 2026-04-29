@@ -57,12 +57,10 @@ pip install -r requirements.txt
 ```
 ---
 ### Cách sử dụng
-1. Làm sạch dữ liệu
-python scripts/clean_data.py
-2. Phân tích dữ liệu
-python scripts/analyze_data.py
-3. Trực quan hóa
-python scripts/visualize.py
+cmd
+```aiignore
+ python main.py
+```
 ---
 ### Dataset
 1. File dữ liệu nằm tại:
