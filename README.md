@@ -73,10 +73,14 @@ cmd
 - Exam Score
 - ...
 ---
-### Ví dụ output
-- Biểu đồ phân phối điểm số
-- Biểu đồ so sánh thời gian học vs điểm
-- Heatmap correlation
+### Output
+- Các biểu đồ phân tích (figure/eda)
+![Biểu đồ phân phối điểm số theo giới tính](./figure/eda/score_by_gender.png)
+![Biểu đồ phân tích điểm số theo trường học](./figure/eda/score_by_school.png)
+![Phân phối điểm số](./figure/eda/score_distribution.png)
+- Các biểu đồ dự đoán (figure/evaluation)
+![Biểu đồ dự đoán vs thực tế](./figure/evaluation/actual_vs_predicted.png)
+![model metrics](./figure/evaluation/model_metrics.png)
 ---
 ### Ngôn ngữ sử dụng / Thư viện sử dụng 
 - Python 
@@ -84,6 +88,3 @@ cmd
 - NumPy
 - Matplotlib / Seaborn
 ---
-### License
-
-Dự án phục vụ mục đích học tập.

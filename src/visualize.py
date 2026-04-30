@@ -10,6 +10,10 @@ sns.set(style="whitegrid")
 # Define figure output directory
 FIGURE_DIR = Path(__file__).parent.parent / 'figure'
 FIGURE_DIR.mkdir(parents=True, exist_ok=True)
+EDA_DIR = FIGURE_DIR / 'eda'
+EVAL_DIR = FIGURE_DIR / 'evaluation'
+EDA_DIR.mkdir(parents=True, exist_ok=True)
+EVAL_DIR.mkdir(parents=True, exist_ok=True)
 
 # ================== 1. PHÂN PHỐI ĐIỂM ==================
 def plot_score_distribution(df):
@@ -21,7 +25,7 @@ def plot_score_distribution(df):
     plt.xlabel("Điểm số (Exam Score)")
     plt.ylabel("Số lượng học sinh")
     
-    plt.savefig(FIGURE_DIR / 'score_distribution.png', dpi=300, bbox_inches='tight')
+    plt.savefig(EDA_DIR / 'score_distribution.png', dpi=300, bbox_inches='tight')
     plt.close()
 
 
@@ -35,7 +39,7 @@ def plot_study_vs_score(df):
     plt.xlabel("Thời gian học (Hours Studied)")
     plt.ylabel("Điểm số (Exam Score)")
     
-    plt.savefig(FIGURE_DIR / 'study_vs_score.png', dpi=300, bbox_inches='tight')
+    plt.savefig(EDA_DIR / 'study_vs_score.png', dpi=300, bbox_inches='tight')
     plt.close()
 
 
@@ -51,7 +55,7 @@ def plot_correlation_heatmap(df):
     sns.heatmap(corr, cmap='coolwarm')
     plt.title("Ma trận tương quan giữa các thuộc tính")
 
-    plt.savefig(FIGURE_DIR / 'correlation_heatmap.png', dpi=300, bbox_inches='tight')
+    plt.savefig(EDA_DIR / 'correlation_heatmap.png', dpi=300, bbox_inches='tight')
     plt.close()
 
 
@@ -65,7 +69,7 @@ def plot_score_by_gender(df):
     plt.xlabel("Giới tính")
     plt.ylabel("Điểm số (Exam Score)")
     
-    plt.savefig(FIGURE_DIR / 'score_by_gender.png', dpi=300, bbox_inches='tight')
+    plt.savefig(EDA_DIR / 'score_by_gender.png', dpi=300, bbox_inches='tight')
     plt.close()
 
 
@@ -79,7 +83,7 @@ def plot_score_by_school_type(df):
     plt.xlabel("Loại trường")
     plt.ylabel("Điểm số (Exam Score)")
     
-    plt.savefig(FIGURE_DIR / 'score_by_school_type.png', dpi=300, bbox_inches='tight')
+    plt.savefig(EDA_DIR / 'score_by_school.png', dpi=300, bbox_inches='tight')
     plt.close()
 
 
@@ -95,7 +99,7 @@ def plot_avg_score_by_parental_involvement(df):
     plt.xlabel("Sự tham gia của phụ huynh")
     plt.ylabel("Điểm trung bình (Exam Score)")
     
-    plt.savefig(FIGURE_DIR / 'avg_score_by_parental_involvement.png', dpi=300, bbox_inches='tight')
+    plt.savefig(EDA_DIR / 'avg_score_by_parental_involment.png', dpi=300, bbox_inches='tight')
     plt.close()
 
 
@@ -109,7 +113,7 @@ def plot_attendance_vs_score(df):
     plt.xlabel("Tỷ lệ tham gia (%)")
     plt.ylabel("Điểm số (Exam Score)")
     
-    plt.savefig(FIGURE_DIR / 'attendance_vs_score.png', dpi=300, bbox_inches='tight')
+    plt.savefig(EDA_DIR / 'attendance_vs_score.png', dpi=300, bbox_inches='tight')
     plt.close()
 
 
@@ -123,7 +127,7 @@ def plot_motivation_level_distribution(df):
     plt.xlabel("Mức độ động viên")
     plt.ylabel("Số lượng học sinh")
     
-    plt.savefig(FIGURE_DIR / 'motivation_level_distribution.png', dpi=300, bbox_inches='tight')
+    plt.savefig(EDA_DIR / 'motivation_level_distribution.png', dpi=300, bbox_inches='tight')
     plt.close()
 
 
@@ -133,11 +137,10 @@ def plot_pair_plot(df):
     
     # Chọn một số cột quan trọng để vẽ pair plot
     selected_cols = ['Hours_Studied', 'Attendance', 'Previous_Scores', 'Sleep_Hours', 'Exam_Score']
-    sns.pairplot(df[selected_cols], diag_kind='kde', plot_kws={'alpha':0.6})
-    
-    plt.suptitle("Pair Plot của Các Biến Quan Trọng", y=1.02, fontsize=14)
-    
-    plt.savefig(FIGURE_DIR / 'pair_plot.png', dpi=300, bbox_inches='tight')
+    g = sns.pairplot(df[selected_cols], diag_kind='kde', plot_kws={'alpha': 0.6})
+    g.fig.suptitle("Pair Plot của Các Biến Quan Trọng", y=1.02, fontsize=14)
+
+    g.fig.savefig(EDA_DIR / 'pair_plot.png', dpi=300, bbox_inches='tight')
     plt.close()
 
 
@@ -158,7 +161,7 @@ def plot_actual_vs_predicted(y_actual, y_predicted):
     plt.legend()
     plt.grid(True, alpha=0.3)
     
-    plt.savefig(FIGURE_DIR / 'actual_vs_predicted.png', dpi=300, bbox_inches='tight')
+    plt.savefig(EVAL_DIR / 'actual_vs_predicted.png', dpi=300, bbox_inches='tight')
     plt.close()
 
 
@@ -175,7 +178,7 @@ def plot_residuals(y_actual, y_predicted):
     plt.ylabel("Phần dư (Residuals)")
     plt.grid(True, alpha=0.3)
     
-    plt.savefig(FIGURE_DIR / 'residuals.png', dpi=300, bbox_inches='tight')
+    plt.savefig(EVAL_DIR / 'residuals.png', dpi=300, bbox_inches='tight')
     plt.close()
 
 
@@ -192,7 +195,7 @@ def plot_prediction_errors(y_actual, y_predicted):
     plt.axvline(x=0, color='r', linestyle='--', lw=2, label='Lỗi = 0')
     plt.legend()
     
-    plt.savefig(FIGURE_DIR / 'prediction_errors_distribution.png', dpi=300, bbox_inches='tight')
+    plt.savefig(EVAL_DIR / 'prediction_eror_distribution.png', dpi=300, bbox_inches='tight')
     plt.close()
 
 
@@ -235,7 +238,9 @@ def plot_feature_importance(feature_importance, title="Feature Importance"):
     plt.xlabel('Importance Score')
     plt.ylabel('Features')
     plt.tight_layout()
-    plt.show()
+
+    plt.savefig(EVAL_DIR / 'feature_importance.png', dpi=300, bbox_inches='tight')
+    plt.close()
 # ================== 15. MODEL PERFORMANCE METRICS ==================
 def plot_model_metrics(metrics_dict):
     """
@@ -260,7 +265,7 @@ def plot_model_metrics(metrics_dict):
     plt.ylabel("Giá trị")
     plt.ylim(0, 1.5)
     
-    plt.savefig(FIGURE_DIR / 'model_metrics.png', dpi=300, bbox_inches='tight')
+    plt.savefig(EVAL_DIR / 'model_metrics.png', dpi=300, bbox_inches='tight')
     plt.close()
 
 
@@ -283,5 +288,5 @@ def plot_cv_scores(cv_scores):
     plt.legend()
     plt.grid(True, alpha=0.3)
     
-    plt.savefig(FIGURE_DIR / 'cv_scores.png', dpi=300, bbox_inches='tight')
+    plt.savefig(EVAL_DIR / 'cv_scores.png', dpi=300, bbox_inches='tight')
     plt.close()
