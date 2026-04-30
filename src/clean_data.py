@@ -2,46 +2,44 @@ import pandas as pd
 import os
 
 def clean_dataset(input_path, output_path):
-    """
-    input_path: đường dẫn dataset gốc (CSV)
-    output_path: đường dẫn lưu dataset đã clean
-    """
 
-    # 1. Load dataset
+    # 1. Load
     df = pd.read_csv(input_path)
-    print("Original dataset shape:", df.shape)
+    print(df.head())
+    print("Original:", df.shape)
+    # 2. Drop duplicate trước
+    df = df.drop_duplicates()
+    print("After drop duplicates:", df.shape)
 
-    # 3. Xử lý missing values
+    # 3. Handle missing
     for col in df.columns:
-        if df[col].dtype == 'object':  # text hoặc categorical
-            # fill bằng giá trị mode (giá trị xuất hiện nhiều nhất)
+        if df[col].dtype == 'object':
+            df[col] = df[col].str.strip().str.lower()
             df[col] = df[col].fillna(df[col].mode()[0])
-            df[col] = df[col].str.strip().str.lower()  # chuẩn hóa text
-        elif pd.api.types.is_numeric_dtype(df[col]):  # chỉ numeric thật
-            # fill bằng mean, bỏ qua các giá trị không convert được
-            df[col] = pd.to_numeric(df[col], errors='coerce')  # convert lỗi -> NaN
-            df[col] = df[col].fillna(df[col].mean())
-        else:
-            # các kiểu dữ liệu khác (datetime...) có thể thêm xử lý riêng
-            pass
-    # 4. Chuyển kiểu dữ liệu nếu cần (ví dụ tuổi là int)
-    for col in df.select_dtypes(include='float64').columns:
-        df[col] = df[col].astype(float)
+        elif pd.api.types.is_numeric_dtype(df[col]):
+            df[col] = pd.to_numeric(df[col], errors='coerce')
 
-    # 5. Xử lý outliers (theo IQR) cho các cột số
+    # 4. Xử lý outlier (KHÔNG drop toàn bộ)
     numeric_cols = df.select_dtypes(include='number').columns
+
     for col in numeric_cols:
         Q1 = df[col].quantile(0.25)
         Q3 = df[col].quantile(0.75)
         IQR = Q3 - Q1
-        df = df[(df[col] >= Q1 - 1.5*IQR) & (df[col] <= Q3 + 1.5*IQR)]
+
+        lower = Q1 - 1.5 * IQR
+        upper = Q3 + 1.5 * IQR
+
+        # 👉 clip thay vì drop
+        df[col] = df[col].clip(lower, upper)
+
+    # 5. Fill lại missing numeric (sau khi xử lý outlier)
+    for col in numeric_cols:
+        df[col] = df[col].fillna(df[col].mean())
 
     print("After cleaning:", df.shape)
-    # 2. Xóa duplicates
-    df = df.drop_duplicates()
-    print("After dropping duplicates:", df.shape)
 
-    # 6. Lưu dataset sạch
+    # 6. Save
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     df.to_csv(output_path, index=False)
-    print("Clean dataset saved to:", output_path)
+    print("Saved to:", output_path)

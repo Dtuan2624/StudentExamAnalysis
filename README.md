@@ -72,6 +72,8 @@ cmd
 - Previous Scores
 - Exam Score
 - ...
+3. Tình hình dữ liệu :
+-
 ---
 ### Output
 - Các biểu đồ phân tích (figure/eda)

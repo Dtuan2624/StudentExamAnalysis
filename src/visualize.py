@@ -28,7 +28,6 @@ def plot_score_distribution(df):
     plt.savefig(EDA_DIR / 'score_distribution.png', dpi=300, bbox_inches='tight')
     plt.close()
 
-
 # ================== 2. THỜI GIAN HỌC VS ĐIỂM ==================
 def plot_study_vs_score(df):
     plt.figure(figsize=(8,6))
@@ -231,7 +230,9 @@ def plot_feature_importance(feature_importance, title="Feature Importance"):
         x='Importance',
         y='Feature',
         data=importance_df,
-        palette='viridis'
+        hue='Feature',
+        palette='viridis',
+        legend = False
     )
 
     plt.title(title, fontsize=16)

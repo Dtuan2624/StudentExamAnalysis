@@ -25,6 +25,7 @@ if __name__ == "__main__":
     visualize.plot_motivation_level_distribution(df)
     visualize.plot_pair_plot(df)
 
+    print("saved to figure dir")
     # Mô hình hóa và dự đoán
     print("\n=== MÔ HÌNH HÓA VÀ DỰ ĐOÁN ===")
     X, y, label_encoders = model.preprocess_data(df)
