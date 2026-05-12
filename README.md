@@ -24,7 +24,7 @@ StudentExamAnalysis/
 │   ├── analyze_data.py         # Phân tích dữ liệu
 │   └── visualize.py            # Vẽ biểu đồ
 │
-│── outputs/                    # Kết quả (ảnh, báo cáo)
+│── figure/                    # Kết quả (ảnh, báo cáo)
 │
 │── main.py                     # Chạy project
 │── requirements.txt            # Thư viện cần thiết
