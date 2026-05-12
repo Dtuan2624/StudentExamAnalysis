@@ -144,25 +144,85 @@ def plot_pair_plot(df):
 
 
 # ================== 11. ACTUAL VS PREDICTED ==================
-def plot_actual_vs_predicted(y_actual, y_predicted):
-    plt.figure(figsize=(8,6))
-    
-    plt.scatter(y_actual, y_predicted, alpha=0.6, edgecolors='k')
-    
-    # Vẽ đường hoàn hảo
+def plot_actual_vs_predicted(y_actual, y_predicted, model_name="Random Forest"):
+
+    from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
+    import numpy as np
+
+    # Tính metrics
+    r2 = r2_score(y_actual, y_predicted)
+    mae = mean_absolute_error(y_actual, y_predicted)
+    rmse = np.sqrt(mean_squared_error(y_actual, y_predicted))
+    mape = np.mean(np.abs((y_actual - y_predicted) / y_actual)) * 100 if np.all(y_actual != 0) else np.nan
+
+    residuals = y_actual - y_predicted
+    bias = np.mean(residuals)
+
+    # Tạo figure
+    plt.figure(figsize=(10, 8))
+
+    # Scatter plot với density coloring
+    scatter = plt.scatter(y_actual, y_predicted,
+                          alpha=0.7,
+                          c=residuals,
+                          cmap='coolwarm',
+                          edgecolors='k',
+                          s=50)
+
+    # Đường hoàn hảo (y = x)
     min_val = min(y_actual.min(), y_predicted.min())
     max_val = max(y_actual.max(), y_predicted.max())
-    plt.plot([min_val, max_val], [min_val, max_val], 'r--', lw=2, label='Hoàn hảo')
-    
-    plt.title("Giá trị Thực tế vs Dự đoán", fontsize=14)
-    plt.xlabel("Giá trị Thực tế")
-    plt.ylabel("Giá trị Dự đoán")
-    plt.legend()
+    plt.plot([min_val, max_val], [min_val, max_val], 'r--', lw=2.5, label='Đường hoàn hảo (y = x)')
+
+    # Thêm regression line (dự đoán thực tế)
+    sns.regplot(x=y_actual, y=y_predicted,
+                scatter=False,
+                line_kws={'color': 'blue', 'alpha': 0.8, 'linestyle': '-'},
+                label='Regression Line')
+
+    plt.colorbar(scatter, label='Residual (Actual - Predicted)')
+
+    # Thêm text box với metrics
+    metrics_text = f"""
+    Model: {model_name}
+    R² Score     = {r2:.4f}
+    MAE          = {mae:.2f}
+    RMSE         = {rmse:.2f}
+    MAPE         = {mape:.2f}%
+    Bias         = {bias:.2f}
+    Samples      = {len(y_actual)}
+    """
+
+    plt.text(0.02, 0.98, metrics_text,
+             transform=plt.gca().transAxes,
+             fontsize=11,
+             verticalalignment='top',
+             bbox=dict(boxstyle="round,pad=0.5", facecolor="white", alpha=0.9, edgecolor='gray'))
+
+    # Labels và Title
+    plt.title("Actual vs Predicted Exam Scores\n(with Model Performance Metrics)",
+              fontsize=16, pad=20)
+    plt.xlabel("Actual Exam Score", fontsize=12)
+    plt.ylabel("Predicted Exam Score", fontsize=12)
+
+    plt.legend(loc='lower right')
     plt.grid(True, alpha=0.3)
-    
+
+    # Thêm annotation cho vùng tốt / kém
+    plt.annotate('Over-predicted', xy=(max_val * 0.3, max_val * 0.7),
+                 xytext=(max_val * 0.2, max_val * 0.85),
+                 arrowprops=dict(arrowstyle='->', color='red', alpha=0.6))
+    plt.annotate('Under-predicted', xy=(max_val * 0.7, max_val * 0.3),
+                 xytext=(max_val * 0.75, max_val * 0.15),
+                 arrowprops=dict(arrowstyle='->', color='blue', alpha=0.6))
+
+    plt.tight_layout()
+
+    # Lưu file
     plt.savefig(EVAL_DIR / 'actual_vs_predicted.png', dpi=300, bbox_inches='tight')
     plt.close()
 
+    return r2, mae, rmse  # Trả về metrics để sử dụng sau
 
 # ================== 12. RESIDUALS PLOT ==================
 def plot_residuals(y_actual, y_predicted):
@@ -264,7 +324,7 @@ def plot_model_metrics(metrics_dict):
     
     plt.title("Các Chỉ số Hiệu suất Mô hình", fontsize=14)
     plt.ylabel("Giá trị")
-    plt.ylim(0, 1.5)
+    plt.ylim(0, 2)
     
     plt.savefig(EVAL_DIR / 'model_metrics.png', dpi=300, bbox_inches='tight')
     plt.close()
