@@ -34,9 +34,9 @@ def preprocess_data(df):
 
     return X, y, label_encoders
 
-def train_model(X, y):
+def train_model(X, y, label_encoders=None):
     """
-    Huấn luyện mô hình Random Forest
+    Huấn luyện mô hình Random Forest và lưu model + label_encoders
     """
     # Chia dữ liệu train/test
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
@@ -67,13 +67,25 @@ def train_model(X, y):
     # Lưu mô hình
     model_path = MODEL_DIR / 'student_performance_model.pkl'
     joblib.dump(model, model_path)
+    print(f"✅ Model saved to: {model_path}")
+
+    # Lưu label encoders (quan trọng cho predict)
+    if label_encoders is not None:
+        encoders_path = MODEL_DIR / 'label_encoders.pkl'
+        joblib.dump(label_encoders, encoders_path)
+        print(f"✅ Label encoders saved to: {encoders_path}")
+
+    # Lưu feature names để đồng bộ cột khi predict
+    feature_names_path = MODEL_DIR / 'feature_names.pkl'
+    joblib.dump(list(X.columns), feature_names_path)
+    print(f"✅ Feature names saved to: {feature_names_path}")
 
     return model, metrics, cv_scores, X_test, y_test, y_pred
 
 def predict_new_data(model, new_data, label_encoders):
     """
-    Dự đoán trên dữ liệu mới
-    new_data: DataFrame với cùng cấu trúc như dữ liệu huấn luyện
+    Dự đoán trên dữ liệu mới.
+    Tự động sắp xếp cột đúng thứ tự model đã học và xử lý missing features.
     """
     # Sao chép để không ảnh hưởng gốc
     new_data_processed = new_data.copy()
@@ -81,10 +93,19 @@ def predict_new_data(model, new_data, label_encoders):
     # Mã hóa categorical
     for col, le in label_encoders.items():
         if col in new_data_processed.columns:
-            # Xử lý giá trị chưa thấy
             new_data_processed[col] = new_data_processed[col].map(
                 lambda x: le.transform([x])[0] if x in le.classes_ else -1
             )
+
+    # Đồng bộ cột theo thứ tự model đã học
+    if hasattr(model, 'feature_names_in_'):
+        expected_cols = list(model.feature_names_in_)
+        # Thêm cột thiếu với giá trị 0
+        for col in expected_cols:
+            if col not in new_data_processed.columns:
+                new_data_processed[col] = 0
+        # Sắp xếp đúng thứ tự và chỉ giữ cột cần thiết
+        new_data_processed = new_data_processed[expected_cols]
 
     # Dự đoán
     predictions = model.predict(new_data_processed)
