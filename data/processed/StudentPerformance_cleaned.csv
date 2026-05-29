@@ -93,7 +93,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 26,70,medium,low,yes,8,75,medium,yes,1.0,medium,low,private,neutral,4,yes,high school,far,female,63
 16,97,medium,medium,yes,6,92,low,yes,0.0,high,medium,private,positive,4,no,college,near,male,71
 18,97,high,medium,yes,4,75,low,yes,0.0,low,medium,public,positive,3,no,high school,moderate,male,69
-18,89,high,medium,yes,4,73,medium,yes,3.0,high,medium,private,positive,2,no,college,near,female,75
+18,89,high,medium,yes,4,73,medium,yes,3.0,high,medium,private,positive,2,no,college,near,female,100
 11,91,medium,medium,no,6,94,medium,yes,3.0,medium,medium,public,neutral,3,no,college,moderate,male,68
 22,64,low,medium,no,7,98,low,no,1.0,medium,medium,public,negative,3,no,high school,near,male,62
 22,81,medium,medium,yes,7,77,low,yes,2.0,medium,medium,public,positive,3,no,postgraduate,far,female,68
@@ -105,14 +105,14 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 15,98,high,medium,no,6,58,high,yes,0.0,low,high,public,positive,3,no,college,near,male,69
 19,67,medium,medium,no,5,82,high,yes,1.0,low,low,private,negative,3,no,high school,near,male,63
 22,99,medium,low,yes,6,92,low,yes,3.0,medium,medium,public,negative,4,no,postgraduate,moderate,male,72
-31,100,medium,medium,no,7,59,medium,yes,2.0,high,high,public,positive,5,no,postgraduate,moderate,male,75
+31,100,medium,medium,no,7,59,medium,yes,2.0,high,high,public,positive,5,no,postgraduate,moderate,male,76
 21,82,medium,high,yes,7,66,high,yes,3.0,low,medium,public,positive,3,yes,college,near,female,69
 22,67,medium,medium,yes,7,72,high,yes,3.0,low,high,public,positive,2,no,postgraduate,moderate,female,67
 20,73,high,medium,yes,9,92,medium,yes,2.0,medium,high,public,positive,3,no,college,near,male,69
 8,77,high,medium,yes,6,87,medium,yes,0.0,low,medium,public,neutral,2,no,high school,moderate,male,63
 20,72,medium,medium,no,9,66,medium,yes,3.0,low,high,private,positive,3,no,postgraduate,near,male,67
 20,71,low,high,yes,7,62,high,yes,2.0,medium,medium,public,negative,5,no,college,near,male,66
-35,99,high,high,yes,7,85,low,yes,2.0,medium,high,private,neutral,2,no,postgraduate,near,female,75
+35,99,high,high,yes,7,85,low,yes,2.0,medium,high,private,neutral,2,no,postgraduate,near,female,79
 19,66,medium,medium,no,8,74,medium,yes,1.0,high,medium,public,neutral,3,no,high school,near,female,64
 22,89,high,high,yes,6,80,medium,yes,1.0,high,high,public,positive,3,no,high school,near,female,73
 20,60,low,high,no,7,82,high,yes,2.0,low,high,public,positive,4,yes,high school,near,male,63
@@ -208,7 +208,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 23,81,low,medium,yes,4,54,medium,yes,1.0,low,medium,public,neutral,3,no,college,near,male,66
 23,74,medium,high,yes,8,88,low,yes,0.0,medium,high,public,negative,3,yes,high school,near,male,66
 23,81,medium,low,no,4,84,medium,yes,2.0,medium,medium,public,positive,5,no,high school,near,male,68
-36,86,high,medium,yes,7,97,medium,yes,2.0,medium,high,public,positive,1,no,high school,near,female,75
+36,86,high,medium,yes,7,97,medium,yes,2.0,medium,high,public,positive,1,no,high school,near,female,78
 23,77,medium,high,yes,6,69,low,yes,1.0,medium,medium,private,positive,2,no,high school,moderate,female,67
 27,89,medium,high,yes,6,89,medium,yes,3.0,medium,medium,private,positive,3,no,high school,near,male,74
 26,94,medium,high,no,5,79,high,yes,1.0,low,high,public,positive,2,no,postgraduate,near,male,74
@@ -216,7 +216,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 18,78,high,medium,yes,5,77,medium,no,2.0,medium,medium,public,neutral,4,no,high school,far,male,66
 25,76,medium,medium,yes,5,89,high,yes,3.0,medium,high,public,neutral,3,no,high school,far,female,69
 15,87,medium,high,yes,10,52,medium,yes,2.0,low,high,private,positive,3,no,college,near,male,68
-19,70,medium,low,no,7,54,high,yes,0.0,medium,medium,public,positive,2,yes,high school,moderate,male,75
+19,70,medium,low,no,7,54,high,yes,0.0,medium,medium,public,positive,2,yes,high school,moderate,male,89
 17,86,high,low,no,5,55,low,no,2.0,high,medium,private,neutral,4,no,college,near,male,66
 20,95,low,medium,yes,7,64,low,no,2.0,medium,high,public,neutral,3,no,high school,near,female,68
 34,77,medium,low,yes,7,80,low,yes,0.0,medium,medium,public,positive,3,no,high school,near,male,69
@@ -403,7 +403,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 16,62,medium,medium,yes,7,79,low,yes,2.0,medium,medium,public,neutral,3,no,high school,near,male,63
 20,66,high,high,no,7,73,medium,yes,1.0,medium,medium,public,negative,4,no,college,near,female,65
 20,89,medium,medium,yes,4,58,medium,yes,1.0,medium,medium,public,positive,3,no,high school,far,female,67
-17,77,low,high,yes,5,53,medium,yes,2.0,high,medium,public,neutral,3,no,college,near,male,75
+17,77,low,high,yes,5,53,medium,yes,2.0,high,medium,public,neutral,3,no,college,near,male,86
 24,76,low,high,no,6,72,high,yes,3.0,medium,high,public,neutral,3,yes,high school,moderate,female,67
 14,65,high,medium,no,5,59,low,yes,1.0,high,medium,public,positive,4,no,postgraduate,far,male,63
 19,80,medium,medium,no,7,94,medium,yes,0.0,medium,low,public,neutral,3,no,college,moderate,female,66
@@ -528,7 +528,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 10,81,high,medium,yes,8,99,medium,no,2.0,medium,medium,public,positive,4,no,postgraduate,moderate,female,67
 20,93,low,high,yes,7,83,medium,yes,0.0,medium,medium,private,negative,2,yes,high school,near,male,68
 22,78,medium,medium,yes,5,91,low,yes,0.0,medium,high,private,negative,3,no,postgraduate,near,male,68
-15,83,medium,medium,no,7,97,medium,yes,2.0,low,high,private,neutral,2,no,high school,near,female,75
+15,83,medium,medium,no,7,97,medium,yes,2.0,low,high,private,neutral,2,no,high school,near,female,97
 24,81,medium,low,no,9,61,medium,yes,1.0,low,low,public,positive,4,no,college,near,female,66
 10,62,medium,low,no,7,68,high,yes,3.0,medium,medium,public,neutral,3,no,postgraduate,near,male,61
 20,85,high,medium,no,9,61,high,yes,2.0,high,medium,public,positive,3,no,college,near,male,70
@@ -557,9 +557,9 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 18,95,medium,medium,yes,7,91,low,yes,0.0,low,medium,public,positive,4,yes,postgraduate,moderate,male,69
 17,91,medium,medium,no,6,66,high,yes,1.0,high,medium,private,positive,3,no,high school,near,male,69
 17,97,medium,high,yes,9,88,medium,no,0.0,medium,medium,public,positive,2,no,high school,near,male,70
-22,70,low,medium,no,7,53,low,yes,1.0,low,medium,public,positive,3,no,high school,near,female,75
+22,70,low,medium,no,7,53,low,yes,1.0,low,medium,public,positive,3,no,high school,near,female,83
 17,83,high,medium,no,7,70,low,yes,3.0,low,medium,private,neutral,5,no,postgraduate,near,female,68
-22,71,low,high,yes,9,56,high,yes,1.0,low,high,public,neutral,3,yes,college,near,female,75
+22,71,low,high,yes,9,56,high,yes,1.0,low,high,public,neutral,3,yes,college,near,female,84
 32,93,medium,medium,yes,8,93,high,yes,1.0,medium,high,public,negative,3,no,postgraduate,far,female,75
 25,60,low,high,no,8,98,medium,yes,1.0,medium,medium,public,neutral,5,no,postgraduate,near,female,67
 18,83,medium,high,yes,5,66,medium,yes,0.0,high,medium,private,positive,4,no,postgraduate,near,male,69
@@ -636,7 +636,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 14,81,medium,medium,yes,7,73,low,no,1.0,high,medium,private,positive,3,yes,high school,moderate,male,63
 10,75,high,medium,no,9,81,medium,yes,3.0,low,high,public,negative,5,no,high school,near,female,65
 25,83,medium,medium,yes,8,83,medium,yes,2.0,low,medium,public,neutral,1,yes,high school,moderate,female,67
-20,65,medium,low,yes,7,62,high,yes,0.0,medium,medium,public,neutral,0,yes,postgraduate,near,male,75
+20,65,medium,low,yes,7,62,high,yes,0.0,medium,medium,public,neutral,0,yes,postgraduate,near,male,80
 12,100,medium,medium,yes,4,68,medium,yes,2.0,low,medium,public,neutral,3,no,college,far,male,68
 12,77,medium,medium,yes,8,57,medium,yes,2.0,low,high,public,negative,2,no,college,moderate,male,63
 18,74,medium,medium,no,6,56,medium,yes,1.0,medium,medium,private,positive,3,no,college,moderate,male,64
@@ -667,7 +667,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 21,98,medium,high,no,5,63,low,yes,0.0,low,high,public,neutral,2,no,postgraduate,near,male,70
 18,94,medium,medium,no,6,71,low,yes,2.0,high,medium,public,neutral,3,no,postgraduate,far,male,69
 29,69,medium,high,no,6,96,low,yes,1.0,high,medium,public,positive,4,no,high school,near,female,70
-4,69,medium,low,no,9,93,low,no,2.0,medium,high,private,negative,3,no,high school,moderate,female,59
+4,69,medium,low,no,9,93,low,no,2.0,medium,high,private,negative,3,no,high school,moderate,female,58
 27,68,medium,medium,no,9,66,medium,yes,3.0,high,medium,private,positive,3,no,high school,far,male,67
 27,97,high,high,yes,9,66,low,yes,1.0,low,medium,public,positive,3,no,high school,far,male,73
 8,94,high,low,no,8,89,high,yes,0.0,medium,medium,public,neutral,2,no,high school,near,female,66
@@ -769,7 +769,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 31,84,medium,high,no,7,71,low,yes,3.5,low,medium,public,negative,4,no,high school,far,male,70
 16,86,high,high,no,8,99,medium,yes,3.5,low,high,private,neutral,4,no,college,near,male,72
 31,76,medium,medium,yes,9,83,medium,yes,2.0,high,medium,private,negative,3,no,high school,moderate,female,70
-24,96,low,high,no,6,93,medium,yes,2.0,low,medium,public,neutral,2,no,high school,moderate,female,75
+24,96,low,high,no,6,93,medium,yes,2.0,low,medium,public,neutral,2,no,high school,moderate,female,94
 17,86,medium,medium,no,7,61,medium,no,2.0,high,medium,public,positive,3,no,high school,moderate,male,66
 24,91,low,low,yes,7,66,high,yes,2.0,low,high,public,neutral,3,no,high school,near,male,69
 26,75,high,medium,no,5,70,low,yes,0.0,high,low,private,neutral,2,no,postgraduate,near,male,68
@@ -835,7 +835,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 15,71,low,medium,no,8,60,high,no,3.5,low,high,public,positive,4,no,high school,far,female,63
 20,96,medium,medium,no,6,71,medium,yes,3.5,low,high,public,neutral,3,no,college,near,male,72
 21,97,medium,high,yes,6,53,low,yes,0.0,low,medium,public,negative,3,yes,high school,moderate,male,67
-29,76,medium,medium,no,8,96,low,yes,2.0,low,medium,public,positive,2,no,postgraduate,moderate,male,75
+29,76,medium,medium,no,8,96,low,yes,2.0,low,medium,public,positive,2,no,postgraduate,moderate,male,94
 14,96,medium,high,yes,4,97,low,yes,2.0,medium,medium,public,negative,3,no,high school,near,female,70
 26,75,low,medium,no,6,72,medium,yes,0.0,low,high,public,neutral,3,no,high school,near,male,66
 19,89,low,medium,yes,5,60,low,yes,3.5,medium,medium,public,positive,2,no,postgraduate,moderate,female,69
@@ -918,7 +918,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 24,70,medium,high,no,5,62,medium,yes,2.0,low,medium,private,negative,4,yes,college,near,male,65
 21,89,medium,medium,no,4,57,medium,yes,1.0,high,medium,private,positive,2,no,high school,near,female,68
 17,67,low,high,yes,9,62,high,yes,3.0,medium,medium,public,positive,3,no,high school,near,male,65
-21,74,high,medium,no,6,94,medium,yes,1.0,low,high,public,positive,1,no,high school,near,male,75
+21,74,high,medium,no,6,94,medium,yes,1.0,low,high,public,positive,1,no,high school,near,male,97
 26,71,high,low,yes,4,83,low,yes,1.0,medium,medium,public,negative,3,no,college,moderate,male,66
 14,74,high,high,yes,6,73,high,yes,2.0,medium,medium,private,neutral,3,no,high school,near,female,67
 21,88,high,medium,no,6,91,medium,yes,2.0,high,medium,public,neutral,1,no,high school,moderate,female,70
@@ -1098,17 +1098,17 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 20,60,medium,medium,no,9,73,high,yes,3.5,medium,medium,public,negative,4,no,college,near,male,65
 8,67,high,medium,yes,8,58,low,yes,2.0,medium,medium,public,positive,1,no,postgraduate,moderate,female,61
 25,64,medium,low,yes,6,82,low,yes,2.0,low,medium,public,negative,3,no,high school,moderate,female,63
-22,75,medium,low,yes,5,66,low,yes,2.0,low,medium,public,positive,2,no,high school,far,male,75
+22,75,medium,low,yes,5,66,low,yes,2.0,low,medium,public,positive,2,no,high school,far,male,80
 26,80,medium,medium,yes,8,93,medium,yes,2.0,low,low,public,neutral,1,no,postgraduate,moderate,male,69
-4,62,medium,low,no,6,67,medium,yes,1.0,low,medium,public,negative,3,no,high school,near,male,59
+4,62,medium,low,no,6,67,medium,yes,1.0,low,medium,public,negative,3,no,high school,near,male,55
 33,74,medium,medium,no,9,64,medium,yes,2.0,medium,medium,private,neutral,4,no,postgraduate,near,female,70
 19,67,medium,medium,yes,6,75,high,yes,1.0,low,medium,public,neutral,3,no,college,near,female,65
 27,86,low,medium,yes,7,59,low,yes,1.0,medium,medium,public,neutral,3,no,high school,near,male,68
 14,79,medium,low,yes,5,60,medium,yes,3.0,low,medium,public,negative,5,no,high school,near,male,64
 24,80,medium,medium,no,6,89,medium,yes,1.0,low,high,public,neutral,3,no,college,near,male,69
-14,77,low,high,no,6,75,medium,yes,1.0,medium,high,public,neutral,4,yes,high school,near,female,75
+14,77,low,high,no,6,75,medium,yes,1.0,medium,high,public,neutral,4,yes,high school,near,female,89
 16,98,medium,low,yes,6,60,medium,yes,1.0,medium,medium,private,positive,3,no,high school,far,male,67
-31,69,medium,medium,no,7,52,medium,no,2.0,high,low,public,neutral,5,no,college,far,male,75
+31,69,medium,medium,no,7,52,medium,no,2.0,high,low,public,neutral,5,no,college,far,male,92
 19,81,high,high,no,6,73,low,no,1.0,low,high,private,positive,3,no,high school,near,female,67
 21,89,low,medium,yes,10,87,low,yes,3.0,medium,medium,public,positive,3,no,college,near,male,70
 25,82,high,low,no,8,68,medium,yes,1.0,low,high,public,neutral,3,no,college,near,male,68
@@ -1164,7 +1164,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 12,89,low,medium,yes,7,63,medium,yes,3.5,low,high,public,neutral,2,no,college,near,male,67
 10,85,medium,medium,yes,6,64,low,yes,1.0,medium,medium,public,negative,3,no,college,near,male,64
 26,86,medium,high,yes,9,91,medium,yes,3.0,high,medium,public,neutral,3,yes,high school,near,female,72
-35,93,medium,medium,yes,6,94,medium,yes,3.5,medium,medium,public,neutral,2,yes,college,near,female,75
+35,93,medium,medium,yes,6,94,medium,yes,3.5,medium,medium,public,neutral,2,yes,college,near,female,76
 28,64,medium,high,yes,6,84,low,yes,2.0,medium,medium,private,positive,2,no,postgraduate,near,male,69
 23,80,low,medium,no,7,72,low,yes,0.0,low,high,public,negative,5,no,high school,near,male,65
 24,88,high,medium,no,10,88,low,yes,2.0,high,high,public,positive,1,no,postgraduate,far,female,72
@@ -1209,7 +1209,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 16,74,low,medium,yes,9,86,low,yes,1.0,low,medium,private,neutral,2,no,high school,near,female,63
 12,70,medium,high,no,5,53,medium,yes,2.0,low,medium,private,positive,3,no,college,near,male,63
 30,76,medium,medium,yes,6,75,low,yes,3.0,high,medium,public,positive,3,no,college,near,female,71
-13,61,high,low,no,7,68,low,no,1.0,medium,medium,public,neutral,2,no,high school,near,male,59
+13,61,high,low,no,7,68,low,no,1.0,medium,medium,public,neutral,2,no,high school,near,male,58
 16,91,medium,medium,yes,6,91,medium,yes,1.0,medium,medium,public,neutral,2,no,high school,moderate,female,68
 16,67,medium,high,no,8,90,high,yes,1.0,high,low,public,neutral,4,no,high school,near,male,65
 25,62,medium,medium,no,10,84,low,yes,2.0,low,medium,public,positive,3,no,college,near,female,65
@@ -1350,7 +1350,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 12,72,low,high,yes,8,56,high,yes,3.0,low,medium,public,positive,1,yes,high school,moderate,male,62
 19,86,medium,low,no,6,54,low,yes,1.0,high,high,private,positive,5,no,postgraduate,near,male,68
 13,60,medium,medium,yes,7,66,medium,yes,2.0,low,medium,public,positive,3,no,postgraduate,near,male,62
-9,61,high,medium,yes,6,77,low,no,1.0,high,medium,private,neutral,2,no,high school,near,male,75
+9,61,high,medium,yes,6,77,low,no,1.0,high,medium,private,neutral,2,no,high school,near,male,82
 23,94,high,medium,no,5,55,high,yes,2.0,medium,medium,public,positive,2,yes,high school,near,male,70
 25,87,high,medium,no,7,86,medium,yes,3.5,medium,low,private,negative,2,no,college,near,male,72
 17,71,low,high,yes,6,78,low,yes,0.0,medium,medium,public,positive,4,no,college,near,female,64
@@ -1386,7 +1386,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 24,92,medium,medium,yes,5,86,high,yes,3.0,medium,high,public,neutral,2,no,high school,near,female,73
 22,79,low,high,yes,6,96,medium,yes,1.0,high,medium,public,neutral,2,no,college,moderate,male,68
 28,82,low,medium,yes,5,95,medium,yes,0.0,high,low,public,neutral,3,no,high school,near,male,69
-29,100,high,high,yes,8,89,medium,yes,2.0,medium,medium,private,neutral,3,no,high school,moderate,female,75
+29,100,high,high,yes,8,89,medium,yes,2.0,medium,medium,private,neutral,3,no,high school,moderate,female,76
 20,76,low,medium,yes,5,95,medium,yes,3.5,low,high,public,positive,3,no,high school,near,male,68
 15,85,medium,medium,no,8,58,high,yes,1.0,low,medium,private,negative,3,no,college,near,male,65
 23,75,medium,medium,yes,8,87,low,yes,0.0,high,low,public,positive,1,no,high school,near,female,66
@@ -1417,7 +1417,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 26,92,medium,low,yes,6,72,medium,yes,1.0,low,medium,private,neutral,3,no,high school,moderate,female,69
 20,90,high,medium,no,7,74,low,no,0.0,high,low,private,positive,3,no,postgraduate,moderate,female,68
 22,85,medium,high,no,4,82,medium,yes,1.0,medium,high,public,positive,2,no,postgraduate,near,male,71
-29,99,high,medium,yes,8,98,high,no,3.5,low,low,public,neutral,2,no,postgraduate,near,male,75
+29,99,high,medium,yes,8,98,high,no,3.5,low,low,public,neutral,2,no,postgraduate,near,male,77
 23,81,high,low,yes,10,94,high,yes,1.0,medium,high,public,neutral,2,no,college,near,female,70
 23,65,medium,medium,no,7,94,medium,yes,1.0,high,medium,public,negative,3,no,college,near,female,66
 26,93,high,medium,no,5,85,low,yes,1.0,high,high,public,positive,3,no,college,moderate,female,73
@@ -1524,7 +1524,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 19,64,low,medium,no,8,62,medium,yes,0.0,high,medium,public,positive,4,yes,college,near,male,61
 14,84,medium,medium,yes,8,70,medium,yes,1.0,low,high,public,neutral,5,no,college,near,male,67
 18,78,medium,low,no,6,73,medium,yes,1.0,high,high,public,positive,2,no,high school,moderate,female,65
-27,98,low,medium,yes,6,93,low,no,3.5,high,high,public,positive,3,no,high school,moderate,female,75
+27,98,low,medium,yes,6,93,low,no,3.5,high,high,public,positive,3,no,high school,moderate,female,101
 31,65,medium,low,yes,7,71,medium,yes,1.0,low,medium,public,neutral,4,no,high school,moderate,male,65
 29,68,medium,medium,no,4,89,medium,yes,0.0,medium,medium,private,neutral,4,yes,college,near,male,67
 17,61,medium,high,yes,7,58,low,yes,2.0,low,medium,public,positive,3,yes,high school,near,female,61
@@ -1606,7 +1606,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 17,65,medium,medium,no,5,62,medium,yes,2.0,medium,medium,public,positive,4,no,high school,near,female,63
 14,94,low,low,yes,7,85,low,yes,1.0,high,medium,public,neutral,3,no,high school,moderate,female,66
 21,96,medium,high,no,8,100,medium,yes,1.0,high,medium,private,positive,2,no,college,near,female,73
-30,98,medium,low,yes,9,93,medium,yes,1.0,low,low,private,positive,3,no,high school,near,male,75
+30,98,medium,low,yes,9,93,medium,yes,1.0,low,low,private,positive,3,no,high school,near,male,88
 22,76,medium,medium,no,9,82,high,yes,0.0,medium,high,private,neutral,4,no,high school,near,male,67
 18,69,high,high,yes,7,97,medium,yes,2.0,medium,medium,public,positive,2,no,college,near,female,69
 18,75,medium,low,yes,6,100,high,yes,2.0,low,medium,public,positive,3,no,high school,near,female,67
@@ -1614,7 +1614,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 25,67,medium,high,yes,6,64,medium,no,0.0,low,medium,public,neutral,2,no,high school,moderate,male,64
 20,84,low,medium,no,5,96,low,yes,1.0,low,medium,public,negative,2,no,high school,near,male,65
 19,79,medium,medium,no,8,92,high,yes,1.0,medium,high,public,positive,2,no,high school,near,male,68
-36,95,medium,high,yes,9,54,high,yes,2.0,medium,medium,private,positive,3,no,high school,moderate,male,75
+36,95,medium,high,yes,9,54,high,yes,2.0,medium,medium,private,positive,3,no,high school,moderate,male,77
 22,61,medium,medium,yes,6,97,high,yes,0.0,low,high,public,negative,2,yes,high school,near,male,63
 15,86,high,high,yes,10,68,medium,yes,0.0,high,medium,public,neutral,5,no,college,near,male,69
 17,91,medium,medium,yes,8,66,medium,yes,3.0,medium,low,public,positive,2,no,college,near,male,69
@@ -1749,7 +1749,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 23,86,medium,medium,no,8,91,medium,yes,0.0,low,medium,public,negative,0,no,high school,near,male,67
 21,83,medium,low,no,5,75,low,yes,1.0,medium,medium,public,negative,4,no,college,near,male,66
 26,82,low,high,no,7,60,medium,no,3.0,low,medium,public,neutral,3,no,postgraduate,near,female,68
-4,61,low,high,yes,7,71,high,yes,0.0,low,low,public,positive,1,no,postgraduate,near,male,59
+4,61,low,high,yes,7,71,high,yes,0.0,low,low,public,positive,1,no,postgraduate,near,male,58
 24,79,low,high,yes,5,88,medium,yes,0.0,medium,medium,public,neutral,3,no,high school,moderate,female,67
 16,97,medium,medium,yes,8,57,low,yes,0.0,medium,medium,public,positive,4,yes,high school,near,male,68
 9,76,medium,medium,yes,7,79,medium,yes,1.0,low,medium,public,neutral,3,no,high school,near,female,62
@@ -1843,7 +1843,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 9,73,medium,low,yes,7,95,medium,no,3.0,low,medium,private,negative,3,no,postgraduate,near,male,62
 17,94,high,medium,yes,7,78,medium,yes,1.0,low,high,public,neutral,3,no,college,near,female,70
 21,79,low,high,yes,7,82,medium,yes,1.0,high,medium,public,negative,3,no,high school,near,female,67
-21,92,high,high,yes,9,58,medium,yes,2.0,high,medium,public,neutral,5,no,high school,moderate,female,75
+21,92,high,high,yes,9,58,medium,yes,2.0,high,medium,public,neutral,5,no,high school,moderate,female,89
 14,83,high,medium,yes,7,95,low,yes,1.0,low,medium,private,neutral,2,yes,high school,near,female,65
 28,91,low,medium,yes,5,73,medium,no,2.0,medium,medium,public,neutral,2,no,high school,near,female,69
 15,73,medium,medium,no,7,76,high,yes,2.0,low,medium,public,positive,4,no,high school,far,female,64
@@ -1862,7 +1862,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 19,88,low,medium,yes,8,59,medium,yes,2.0,medium,medium,private,neutral,4,no,high school,near,male,67
 25,70,medium,medium,no,7,51,medium,yes,1.0,high,medium,public,negative,4,no,college,near,female,65
 25,62,high,medium,no,5,71,medium,yes,0.0,low,high,private,positive,4,no,high school,moderate,male,65
-10,76,medium,low,no,6,76,medium,yes,1.0,high,high,public,negative,2,no,postgraduate,near,male,75
+10,76,medium,low,no,6,76,medium,yes,1.0,high,high,public,negative,2,no,postgraduate,near,male,80
 28,97,medium,medium,yes,7,88,high,yes,2.0,medium,medium,public,neutral,2,no,high school,moderate,male,74
 10,60,medium,medium,no,7,72,low,no,3.0,medium,low,public,positive,3,no,high school,near,male,59
 26,84,medium,medium,no,7,64,low,yes,2.0,high,high,public,neutral,3,no,high school,near,male,69
@@ -1956,7 +1956,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 16,96,high,medium,yes,9,97,medium,yes,0.0,medium,high,private,neutral,5,no,college,near,male,72
 28,77,high,medium,yes,9,54,low,yes,1.0,high,medium,public,positive,3,no,postgraduate,near,female,70
 7,80,high,medium,no,9,83,low,no,3.0,medium,medium,public,neutral,3,no,high school,far,female,62
-36,97,high,high,yes,10,91,medium,yes,2.0,low,medium,public,positive,3,no,high school,moderate,female,75
+36,97,high,high,yes,10,91,medium,yes,2.0,low,medium,public,positive,3,no,high school,moderate,female,79
 26,81,medium,high,yes,8,87,medium,yes,2.0,high,high,public,neutral,1,no,postgraduate,near,male,73
 21,80,high,high,yes,7,90,high,yes,1.0,low,low,public,negative,2,no,college,far,male,68
 20,83,high,medium,yes,9,87,low,yes,0.0,high,medium,public,neutral,2,no,high school,near,male,68
@@ -2034,7 +2034,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 23,84,high,high,yes,8,93,medium,yes,1.0,high,medium,public,positive,3,no,postgraduate,far,male,72
 23,73,high,high,no,6,50,medium,yes,1.0,medium,medium,public,positive,3,no,college,near,male,68
 26,91,high,medium,yes,7,57,low,yes,3.0,medium,medium,public,negative,3,no,college,near,male,72
-36,94,high,medium,yes,8,52,high,yes,1.0,low,medium,private,positive,3,no,postgraduate,near,male,75
+36,94,high,medium,yes,8,52,high,yes,1.0,low,medium,private,positive,3,no,postgraduate,near,male,76
 22,73,medium,low,yes,5,58,medium,yes,3.5,low,medium,public,positive,3,yes,college,near,female,65
 17,94,low,medium,no,8,85,medium,yes,1.0,medium,low,public,positive,4,no,high school,near,male,68
 20,64,medium,medium,yes,6,57,medium,yes,3.0,low,high,public,neutral,4,no,college,near,female,65
@@ -2075,7 +2075,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 21,96,high,low,no,10,86,low,yes,1.0,low,high,public,neutral,3,no,college,near,male,71
 16,66,medium,medium,yes,8,50,low,yes,1.0,medium,high,public,neutral,4,no,high school,moderate,male,62
 18,75,medium,low,no,7,50,medium,yes,3.5,low,medium,public,positive,2,no,postgraduate,near,female,65
-24,77,high,medium,yes,7,57,medium,yes,3.0,medium,high,public,positive,2,no,college,far,male,75
+24,77,high,medium,yes,7,57,medium,yes,3.0,medium,high,public,positive,2,no,college,far,male,84
 27,74,medium,medium,yes,6,74,medium,yes,2.0,medium,high,public,neutral,2,no,college,far,male,68
 19,92,high,medium,yes,6,52,medium,yes,3.0,high,medium,public,positive,1,no,high school,near,male,70
 17,81,medium,high,no,8,86,medium,yes,1.0,medium,medium,private,neutral,3,no,postgraduate,near,male,68
@@ -2177,7 +2177,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 33,88,medium,low,no,9,84,medium,yes,1.0,low,medium,public,negative,3,no,high school,near,male,70
 10,94,high,medium,yes,7,74,high,yes,3.0,high,medium,public,positive,3,no,college,moderate,male,70
 21,77,medium,low,yes,7,58,medium,yes,0.0,low,high,public,negative,3,no,college,near,male,64
-32,97,high,low,yes,5,97,low,yes,1.0,low,high,public,positive,5,no,college,moderate,female,75
+32,97,high,low,yes,5,97,low,yes,1.0,low,high,public,positive,5,no,college,moderate,female,76
 20,84,medium,medium,yes,10,62,high,yes,1.0,medium,medium,public,neutral,2,no,college,moderate,male,67
 19,85,high,high,no,7,78,low,yes,2.0,low,high,private,negative,3,no,college,near,male,69
 18,94,medium,low,yes,7,53,medium,yes,3.5,medium,high,public,positive,3,no,high school,far,female,68
@@ -2264,7 +2264,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 27,94,low,medium,yes,7,89,medium,yes,3.0,low,medium,private,positive,2,no,college,near,female,73
 14,83,medium,medium,yes,10,80,medium,yes,1.0,medium,high,private,neutral,3,yes,college,near,female,66
 24,75,high,high,yes,6,51,high,no,1.0,medium,high,public,negative,3,no,high school,near,male,67
-27,97,high,high,no,8,72,medium,yes,3.5,low,medium,public,neutral,2,no,college,near,female,75
+27,97,high,high,no,8,72,medium,yes,3.5,low,medium,public,neutral,2,no,college,near,female,76
 9,77,medium,medium,no,7,57,low,yes,2.0,medium,low,public,negative,3,no,high school,near,male,61
 22,82,low,medium,yes,9,94,high,yes,0.0,medium,medium,public,positive,4,no,high school,moderate,female,68
 17,78,medium,low,yes,9,51,high,yes,1.0,low,medium,private,neutral,3,no,high school,moderate,male,63
@@ -2291,7 +2291,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 29,71,high,medium,no,7,92,low,yes,1.0,low,medium,public,positive,3,no,high school,near,female,69
 30,79,high,high,yes,6,77,medium,yes,1.0,low,medium,public,positive,2,no,high school,near,male,72
 26,98,low,medium,yes,6,73,medium,yes,2.0,low,low,public,negative,3,no,high school,near,female,70
-21,70,high,high,no,9,66,medium,yes,1.0,medium,low,public,neutral,4,no,college,moderate,male,75
+21,70,high,high,no,9,66,medium,yes,1.0,medium,low,public,neutral,4,no,college,moderate,male,91
 15,89,high,low,yes,7,58,low,yes,2.0,low,medium,public,negative,3,no,high school,moderate,male,65
 15,78,low,medium,yes,8,100,low,yes,0.0,low,medium,public,negative,3,yes,high school,near,female,62
 23,72,low,high,yes,8,51,medium,yes,2.0,low,medium,private,positive,3,no,college,far,male,65
@@ -2410,7 +2410,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 25,91,low,medium,yes,8,96,medium,yes,3.0,medium,medium,public,neutral,3,no,high school,near,female,72
 13,64,medium,high,yes,9,83,low,yes,1.0,high,medium,public,positive,4,no,high school,near,male,64
 25,74,low,medium,yes,6,65,high,yes,0.0,high,medium,public,neutral,1,no,high school,moderate,male,65
-29,93,high,high,no,7,74,medium,yes,3.0,medium,high,private,positive,3,no,high school,near,male,75
+29,93,high,high,no,7,74,medium,yes,3.0,medium,high,private,positive,3,no,high school,near,male,76
 13,63,low,medium,no,8,88,medium,yes,0.0,low,medium,private,negative,2,no,high school,near,male,59
 14,98,medium,medium,yes,8,91,low,yes,0.0,low,medium,public,negative,4,no,high school,moderate,male,67
 26,99,medium,medium,yes,8,67,medium,yes,3.5,medium,medium,private,positive,4,yes,high school,near,male,73
@@ -2420,11 +2420,11 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 22,91,medium,low,yes,7,76,medium,yes,1.0,low,high,public,neutral,3,no,college,moderate,female,69
 12,84,high,high,yes,6,71,medium,no,2.0,medium,medium,public,positive,3,no,college,moderate,male,67
 26,86,medium,high,yes,6,83,medium,yes,2.0,low,medium,public,positive,4,no,high school,near,male,72
-27,90,low,medium,no,9,52,low,no,2.0,low,high,public,positive,2,yes,college,near,male,75
+27,90,low,medium,no,9,52,low,no,2.0,low,high,public,positive,2,yes,college,near,male,86
 19,65,medium,high,yes,8,54,medium,yes,0.0,low,high,private,neutral,3,no,high school,far,female,62
 20,93,medium,low,no,7,79,medium,yes,1.0,medium,low,public,neutral,3,no,postgraduate,near,female,69
 11,88,high,high,yes,7,61,low,yes,2.0,medium,medium,public,neutral,3,no,postgraduate,near,male,68
-23,83,high,high,yes,4,89,low,yes,1.0,medium,medium,public,negative,3,no,high school,far,male,75
+23,83,high,high,yes,4,89,low,yes,1.0,medium,medium,public,negative,3,no,high school,far,male,99
 23,96,low,medium,yes,7,89,medium,yes,1.0,low,medium,private,positive,3,no,college,far,female,70
 20,88,low,medium,yes,5,85,medium,yes,2.0,medium,medium,public,negative,3,no,high school,near,male,68
 27,68,medium,medium,yes,7,95,low,yes,0.0,medium,medium,public,positive,4,no,high school,near,male,67
@@ -2512,7 +2512,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 23,81,medium,low,yes,7,74,medium,yes,0.0,low,medium,public,neutral,0,no,postgraduate,near,female,66
 23,84,medium,high,yes,7,73,medium,yes,1.0,high,medium,public,positive,4,no,high school,near,male,71
 23,92,high,medium,yes,4,93,high,yes,0.0,high,medium,public,negative,4,no,high school,near,female,72
-18,86,high,medium,no,8,60,medium,yes,2.0,low,high,private,neutral,1,no,college,near,male,75
+18,86,high,medium,no,8,60,medium,yes,2.0,low,high,private,neutral,1,no,college,near,male,88
 19,84,medium,high,yes,7,75,low,yes,1.0,low,medium,public,negative,2,no,college,far,male,66
 22,76,medium,medium,yes,6,71,medium,yes,0.0,low,high,private,neutral,2,no,high school,moderate,male,65
 21,79,low,medium,yes,7,84,low,yes,2.0,medium,medium,private,neutral,3,no,high school,near,male,66
@@ -2532,7 +2532,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 23,89,high,high,no,6,87,medium,yes,3.5,medium,high,private,neutral,3,no,college,near,female,74
 14,84,medium,medium,no,7,81,medium,yes,0.0,high,medium,public,neutral,2,no,college,near,female,66
 23,73,medium,medium,no,6,63,medium,yes,1.0,high,medium,public,positive,3,no,high school,near,male,67
-14,61,medium,medium,no,5,82,low,no,0.0,low,medium,public,neutral,0,no,high school,near,female,59
+14,61,medium,medium,no,5,82,low,no,0.0,low,medium,public,neutral,0,no,high school,near,female,58
 17,90,high,high,no,8,65,medium,yes,2.0,low,high,public,positive,3,no,postgraduate,moderate,male,71
 18,69,low,high,yes,4,62,high,yes,1.0,medium,low,public,neutral,3,no,high school,moderate,male,63
 26,93,low,high,no,6,87,medium,yes,1.0,medium,high,public,positive,3,no,college,near,female,73
@@ -2541,9 +2541,9 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 20,95,low,medium,no,4,89,medium,yes,3.0,low,medium,public,negative,3,yes,high school,near,male,68
 16,95,medium,low,no,8,68,low,no,2.0,medium,high,public,neutral,4,no,high school,near,female,66
 12,75,medium,high,no,8,54,low,yes,1.0,medium,high,public,negative,3,no,high school,near,female,62
-19,68,medium,medium,yes,5,80,medium,yes,0.0,medium,medium,public,neutral,3,yes,high school,moderate,male,75
+19,68,medium,medium,yes,5,80,medium,yes,0.0,medium,medium,public,neutral,3,yes,high school,moderate,male,78
 18,91,medium,medium,no,7,63,medium,yes,1.0,medium,medium,public,negative,4,no,college,near,male,68
-35,77,high,high,yes,8,89,medium,yes,3.5,high,medium,public,positive,4,no,college,near,female,75
+35,77,high,high,yes,8,89,medium,yes,3.5,high,medium,public,positive,4,no,college,near,female,77
 23,68,high,low,yes,8,68,medium,yes,1.0,medium,medium,public,neutral,2,no,college,near,male,65
 12,96,high,high,yes,5,84,low,yes,3.0,high,medium,public,positive,4,no,postgraduate,near,female,73
 17,68,medium,low,yes,5,78,medium,yes,3.5,low,low,public,positive,2,no,college,near,male,64
@@ -2555,7 +2555,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 22,73,high,medium,yes,7,70,low,no,2.0,low,medium,public,positive,3,no,college,near,male,66
 15,74,high,medium,yes,8,76,medium,yes,1.0,medium,low,public,neutral,4,no,high school,far,male,64
 23,87,medium,high,no,5,59,medium,yes,1.0,high,low,public,neutral,4,no,college,near,male,70
-4,62,medium,medium,no,6,78,high,yes,3.0,high,medium,public,neutral,2,no,high school,far,female,59
+4,62,medium,medium,no,6,78,high,yes,3.0,high,medium,public,neutral,2,no,high school,far,female,58
 20,97,medium,high,yes,5,63,medium,yes,0.0,low,medium,public,negative,3,no,college,far,female,69
 22,69,medium,medium,yes,6,91,low,yes,0.0,high,high,private,neutral,1,yes,high school,moderate,male,64
 26,100,low,medium,no,9,60,medium,yes,2.0,medium,medium,public,positive,4,no,high school,near,male,72
@@ -2594,7 +2594,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 20,95,medium,medium,no,6,76,medium,yes,0.0,low,high,private,positive,4,no,high school,moderate,female,69
 20,74,high,medium,yes,8,85,medium,yes,2.0,low,medium,public,positive,0,no,high school,near,male,67
 25,72,medium,high,yes,7,89,medium,yes,2.0,low,high,public,positive,3,no,postgraduate,near,female,71
-7,69,medium,high,yes,8,54,high,yes,1.0,medium,high,public,positive,2,no,high school,far,male,75
+7,69,medium,high,yes,8,54,high,yes,1.0,medium,high,public,positive,2,no,high school,far,male,87
 16,62,low,medium,no,8,74,medium,yes,2.0,high,high,private,neutral,3,no,high school,moderate,male,62
 21,62,high,low,yes,7,58,medium,yes,2.0,low,high,public,positive,1,no,college,near,female,64
 27,95,medium,high,no,8,88,high,yes,3.0,medium,medium,private,positive,2,no,high school,far,female,74
@@ -2686,7 +2686,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 22,72,high,medium,yes,5,67,low,yes,2.0,medium,medium,public,neutral,4,no,college,near,female,67
 22,81,high,medium,no,7,87,low,yes,0.0,low,medium,public,neutral,2,no,high school,near,female,67
 23,76,low,medium,yes,6,98,medium,yes,1.0,low,high,public,neutral,3,no,college,moderate,male,67
-11,71,low,medium,yes,8,55,medium,yes,1.0,low,medium,public,negative,3,no,college,near,female,75
+11,71,low,medium,yes,8,55,medium,yes,1.0,low,medium,public,negative,3,no,college,near,female,87
 25,65,high,high,yes,4,76,high,yes,1.0,high,medium,private,neutral,1,no,high school,moderate,female,67
 24,93,high,medium,yes,8,51,high,yes,3.5,medium,medium,private,positive,2,yes,high school,near,male,72
 14,100,medium,low,yes,8,91,high,yes,0.0,low,high,public,neutral,3,no,high school,near,female,69
@@ -2879,7 +2879,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 16,68,medium,medium,yes,7,85,medium,yes,1.0,medium,medium,public,positive,2,no,college,near,female,65
 22,97,medium,high,yes,8,59,medium,yes,1.0,low,medium,public,negative,3,no,high school,near,male,70
 19,71,medium,high,yes,9,94,high,yes,1.0,high,medium,private,positive,4,no,high school,near,male,68
-7,66,high,low,yes,8,68,high,yes,0.0,low,medium,public,negative,2,yes,college,moderate,male,59
+7,66,high,low,yes,8,68,high,yes,0.0,low,medium,public,negative,2,yes,college,moderate,male,57
 7,64,medium,high,no,9,70,high,yes,3.5,low,low,public,neutral,4,yes,high school,far,male,59
 16,83,low,low,yes,6,61,medium,yes,0.0,medium,high,public,neutral,4,no,college,near,male,64
 23,65,high,medium,yes,9,74,medium,yes,2.0,medium,high,private,neutral,3,no,college,moderate,male,67
@@ -2903,7 +2903,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 17,73,medium,medium,yes,6,97,high,yes,1.0,medium,high,public,positive,3,no,high school,near,male,67
 17,82,high,medium,yes,7,65,medium,yes,1.0,medium,medium,public,positive,5,no,high school,near,male,68
 22,89,low,medium,yes,9,78,medium,yes,0.0,medium,medium,public,positive,3,no,high school,moderate,male,68
-11,62,high,medium,yes,7,76,high,yes,3.0,high,medium,private,neutral,3,yes,high school,moderate,male,75
+11,62,high,medium,yes,7,76,high,yes,3.0,high,medium,private,neutral,3,yes,high school,moderate,male,88
 25,60,medium,high,yes,8,67,medium,yes,1.0,medium,high,public,neutral,2,no,college,near,female,66
 18,78,high,low,yes,7,85,high,yes,3.0,low,low,public,negative,2,no,college,near,male,67
 13,65,medium,high,no,7,75,low,yes,2.0,medium,high,private,neutral,4,no,high school,moderate,male,63
@@ -2946,14 +2946,14 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 22,67,low,high,yes,8,53,medium,yes,0.0,medium,high,public,negative,3,no,high school,far,male,62
 13,83,low,low,no,5,59,high,yes,3.5,low,medium,private,neutral,2,no,high school,near,female,63
 21,73,low,medium,yes,9,60,high,yes,2.0,medium,medium,public,positive,3,no,college,near,male,66
-4,67,medium,medium,no,6,73,low,yes,1.0,low,medium,private,positive,2,no,college,moderate,male,59
+4,67,medium,medium,no,6,73,low,yes,1.0,low,medium,private,positive,2,no,college,moderate,male,58
 19,94,medium,high,yes,6,91,medium,yes,1.0,low,medium,public,negative,3,no,high school,moderate,male,70
 10,76,medium,low,no,4,68,medium,yes,1.0,high,low,private,neutral,6,no,college,near,male,63
 27,76,medium,high,yes,6,69,high,yes,0.0,medium,high,public,neutral,1,no,high school,near,male,70
 25,67,high,medium,yes,6,65,medium,yes,1.0,low,medium,public,negative,3,no,high school,near,male,65
 23,75,medium,low,yes,8,66,medium,yes,3.5,medium,low,public,neutral,3,no,high school,near,male,67
 29,95,high,medium,no,9,70,medium,no,1.0,low,medium,private,positive,2,no,postgraduate,near,female,73
-14,75,medium,medium,yes,5,95,medium,yes,0.0,medium,medium,public,positive,3,no,college,moderate,male,75
+14,75,medium,medium,yes,5,95,medium,yes,0.0,medium,medium,public,positive,3,no,college,moderate,male,82
 30,98,low,medium,no,7,51,high,yes,0.0,low,medium,public,positive,2,no,high school,near,male,71
 26,98,medium,medium,yes,4,81,low,yes,1.0,low,medium,public,positive,4,no,postgraduate,near,male,73
 19,66,medium,high,no,7,94,low,yes,1.0,high,medium,public,positive,4,no,high school,moderate,female,65
@@ -3123,7 +3123,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 16,84,medium,high,yes,8,51,low,yes,0.0,medium,medium,public,negative,3,no,postgraduate,near,female,66
 23,94,low,low,yes,9,75,medium,yes,3.0,low,medium,private,neutral,2,no,postgraduate,moderate,female,69
 18,75,high,medium,yes,9,83,medium,yes,2.0,low,medium,public,positive,4,yes,postgraduate,moderate,female,67
-19,90,medium,high,yes,5,90,low,yes,0.0,low,medium,public,neutral,2,no,college,far,female,75
+19,90,medium,high,yes,5,90,low,yes,0.0,low,medium,public,neutral,2,no,college,far,female,94
 24,85,medium,medium,yes,7,87,high,yes,2.0,medium,medium,private,neutral,2,no,high school,near,female,71
 9,75,medium,medium,no,7,54,low,yes,2.0,low,medium,public,positive,4,no,high school,near,female,61
 28,66,high,medium,yes,9,73,medium,yes,2.0,low,medium,public,positive,2,no,college,near,male,68
@@ -3140,7 +3140,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 23,82,high,low,no,7,65,high,yes,1.0,medium,high,public,negative,3,no,high school,near,female,68
 18,88,high,low,yes,6,84,medium,yes,1.0,medium,high,public,positive,3,no,postgraduate,moderate,female,70
 25,99,high,medium,yes,7,88,medium,yes,3.0,low,medium,private,positive,4,no,college,moderate,female,75
-7,63,high,high,yes,10,90,medium,yes,0.0,low,medium,private,positive,2,yes,high school,moderate,male,75
+7,63,high,high,yes,10,90,medium,yes,0.0,low,medium,private,positive,2,yes,high school,moderate,male,86
 19,96,medium,medium,yes,7,95,high,yes,3.0,medium,high,private,negative,3,no,college,near,female,73
 16,65,medium,low,no,9,68,medium,yes,1.0,high,medium,public,neutral,3,no,high school,moderate,male,61
 23,76,high,high,no,7,93,medium,yes,0.0,medium,medium,private,negative,6,no,high school,moderate,male,68
@@ -3211,7 +3211,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 23,86,low,medium,yes,4,100,medium,yes,0.0,low,high,public,negative,3,no,postgraduate,near,male,69
 27,75,medium,medium,no,8,60,medium,yes,3.5,medium,medium,public,positive,2,no,postgraduate,moderate,female,69
 13,93,medium,high,no,9,62,low,yes,0.0,low,medium,private,neutral,3,no,high school,moderate,male,65
-30,98,high,high,yes,8,83,high,no,1.0,low,high,public,neutral,3,no,high school,near,female,75
+30,98,high,high,yes,8,83,high,no,1.0,low,high,public,neutral,3,no,high school,near,female,76
 29,92,medium,high,no,8,58,low,yes,2.0,medium,low,private,neutral,3,no,college,near,male,72
 24,75,medium,low,no,7,94,medium,yes,2.0,medium,high,public,negative,4,no,high school,near,male,67
 31,92,high,medium,yes,7,55,medium,yes,3.0,low,high,public,positive,3,no,high school,near,male,74
@@ -3240,7 +3240,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 21,74,low,low,yes,6,70,low,yes,2.0,low,high,public,positive,3,no,high school,moderate,female,64
 26,77,low,low,no,7,71,medium,yes,1.0,medium,high,public,neutral,4,no,postgraduate,moderate,male,66
 20,97,high,high,yes,4,81,medium,yes,1.0,medium,medium,public,positive,2,yes,high school,near,male,72
-36,96,high,medium,yes,7,63,medium,yes,0.0,medium,high,private,positive,4,no,high school,near,male,75
+36,96,high,medium,yes,7,63,medium,yes,0.0,medium,high,private,positive,4,no,high school,near,male,76
 10,89,medium,medium,yes,6,62,medium,yes,3.5,low,medium,public,positive,3,no,postgraduate,moderate,male,67
 26,95,medium,high,no,9,74,low,yes,3.0,low,medium,private,neutral,3,yes,high school,near,female,71
 19,73,high,medium,no,6,52,medium,yes,1.0,medium,medium,public,positive,3,no,high school,near,male,65
@@ -3356,14 +3356,14 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 16,93,low,medium,yes,7,60,medium,yes,1.0,medium,medium,public,positive,1,no,high school,moderate,female,66
 19,67,medium,low,no,7,61,high,yes,1.0,medium,medium,private,neutral,4,no,college,moderate,female,63
 20,60,medium,medium,yes,6,70,medium,yes,2.0,low,medium,public,neutral,3,yes,postgraduate,near,female,63
-7,62,high,medium,yes,8,51,low,yes,0.0,medium,low,public,positive,3,no,college,moderate,male,59
+7,62,high,medium,yes,8,51,low,yes,0.0,medium,low,public,positive,3,no,college,moderate,male,58
 23,70,medium,high,no,7,94,low,yes,3.0,medium,high,public,neutral,3,no,high school,near,female,68
 14,65,high,medium,no,7,63,medium,yes,2.0,low,medium,public,neutral,3,no,high school,moderate,male,61
 13,81,medium,high,no,6,53,low,yes,2.0,low,medium,public,positive,4,no,high school,near,male,65
 10,94,high,low,no,5,71,medium,yes,1.0,high,medium,public,positive,3,no,high school,moderate,male,67
 9,89,low,high,yes,7,91,medium,yes,1.0,high,low,public,neutral,3,no,postgraduate,near,male,67
 12,69,high,low,no,7,70,medium,yes,1.0,medium,medium,private,positive,4,no,high school,near,male,62
-16,76,medium,high,yes,6,63,high,yes,0.0,low,medium,public,positive,1,no,high school,near,female,75
+16,76,medium,high,yes,6,63,high,yes,0.0,low,medium,public,positive,1,no,high school,near,female,86
 32,80,high,medium,no,6,77,low,yes,0.0,medium,medium,public,neutral,5,no,college,near,male,71
 17,92,medium,medium,yes,8,79,medium,yes,1.0,low,medium,public,positive,3,no,postgraduate,near,male,70
 21,94,medium,medium,no,8,88,medium,yes,1.0,medium,medium,public,positive,3,no,college,near,male,71
@@ -3417,7 +3417,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 19,65,low,high,no,9,58,low,yes,3.0,medium,medium,public,negative,4,no,high school,moderate,female,62
 25,89,medium,low,yes,6,59,medium,yes,2.0,low,medium,public,neutral,2,no,college,near,female,69
 21,62,medium,low,yes,7,51,low,yes,0.0,low,medium,private,positive,4,no,high school,near,female,61
-12,61,medium,low,yes,7,52,low,yes,2.0,low,medium,public,positive,2,no,high school,moderate,female,59
+12,61,medium,low,yes,7,52,low,yes,2.0,low,medium,public,positive,2,no,high school,moderate,female,58
 17,64,low,medium,no,7,68,medium,yes,3.5,medium,medium,private,neutral,3,no,high school,near,male,63
 16,99,high,medium,no,9,57,high,no,3.5,medium,medium,public,positive,3,no,college,near,female,71
 20,98,low,medium,yes,7,96,low,no,1.0,low,high,public,positive,3,no,college,near,female,70
@@ -3456,7 +3456,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 4,99,medium,low,yes,9,52,low,yes,0.0,medium,medium,public,neutral,4,no,high school,near,male,62
 32,63,medium,high,no,8,91,medium,no,2.0,high,low,public,positive,5,yes,high school,near,female,68
 27,96,high,low,yes,7,84,medium,yes,1.0,high,medium,public,neutral,3,no,college,near,male,74
-18,93,medium,medium,no,7,76,low,yes,2.0,medium,medium,private,neutral,4,no,high school,near,female,75
+18,93,medium,medium,no,7,76,low,yes,2.0,medium,medium,private,neutral,4,no,high school,near,female,96
 20,73,high,high,no,5,70,high,yes,1.0,low,high,public,negative,2,no,high school,moderate,male,66
 13,99,low,high,yes,6,95,medium,no,0.0,low,medium,public,positive,4,no,postgraduate,near,male,69
 30,72,high,high,yes,6,63,medium,yes,1.0,low,medium,public,neutral,3,no,postgraduate,near,female,70
@@ -3492,7 +3492,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 18,80,low,high,yes,8,75,medium,no,2.0,medium,medium,public,negative,4,no,high school,near,male,65
 19,69,medium,medium,yes,7,55,low,yes,1.0,low,medium,public,positive,4,no,college,near,female,63
 23,67,low,medium,no,6,88,medium,yes,2.0,medium,medium,private,neutral,4,no,high school,near,male,65
-17,60,medium,low,no,6,66,medium,yes,0.0,low,medium,public,positive,2,no,high school,far,female,59
+17,60,medium,low,no,6,66,medium,yes,0.0,low,medium,public,positive,2,no,high school,far,female,58
 23,89,high,high,yes,6,66,low,yes,0.0,low,high,private,positive,3,no,high school,moderate,male,70
 32,64,low,low,yes,6,97,medium,yes,1.0,medium,low,public,neutral,5,no,college,moderate,male,66
 25,70,medium,low,no,9,71,medium,no,2.0,low,medium,public,negative,2,no,college,near,female,63
@@ -3522,7 +3522,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 23,97,medium,medium,yes,9,96,medium,yes,2.0,medium,high,private,neutral,4,no,college,near,male,74
 5,84,medium,medium,yes,7,53,low,no,1.0,low,high,public,positive,3,no,postgraduate,moderate,male,62
 14,68,high,low,yes,5,87,high,yes,2.0,medium,medium,public,positive,3,no,high school,far,male,64
-30,97,high,high,no,5,70,medium,yes,0.0,high,medium,public,positive,2,no,postgraduate,near,male,75
+30,97,high,high,no,5,70,medium,yes,0.0,high,medium,public,positive,2,no,postgraduate,near,male,76
 17,97,high,medium,yes,9,63,medium,yes,2.0,low,medium,public,positive,2,no,high school,near,male,70
 13,100,high,medium,no,6,76,medium,no,0.0,low,low,public,positive,5,no,postgraduate,near,male,69
 19,95,medium,medium,yes,7,74,high,no,0.0,low,high,public,positive,2,no,high school,near,female,69
@@ -3542,7 +3542,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 22,88,medium,low,yes,7,70,medium,yes,3.0,low,medium,public,positive,2,no,high school,near,female,69
 29,83,medium,low,yes,6,77,high,yes,1.0,medium,medium,public,neutral,4,no,high school,near,male,70
 25,63,high,low,yes,8,63,medium,yes,0.0,medium,high,private,positive,1,yes,postgraduate,near,female,65
-14,67,low,low,yes,7,66,low,yes,0.0,low,medium,public,neutral,4,no,high school,far,female,59
+14,67,low,low,yes,7,66,low,yes,0.0,low,medium,public,neutral,4,no,high school,far,female,57
 28,76,medium,medium,yes,6,75,low,yes,0.0,medium,high,public,positive,2,no,high school,near,female,68
 22,67,high,high,no,10,58,medium,yes,2.0,high,low,public,neutral,3,no,postgraduate,near,male,67
 24,92,medium,medium,no,5,69,medium,yes,2.0,medium,medium,private,negative,4,no,high school,near,female,70
@@ -3578,7 +3578,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 15,95,low,low,no,5,67,high,yes,3.0,medium,medium,public,positive,3,no,high school,moderate,female,67
 16,64,high,low,no,9,88,medium,yes,1.0,medium,high,public,positive,3,no,high school,near,male,64
 15,70,low,medium,no,8,63,low,yes,0.0,medium,medium,private,positive,4,no,high school,moderate,female,61
-14,90,high,high,yes,8,86,medium,yes,3.5,medium,medium,private,negative,2,no,high school,near,female,75
+14,90,high,high,yes,8,86,medium,yes,3.5,medium,medium,private,negative,2,no,high school,near,female,99
 33,64,medium,medium,no,8,52,low,no,3.0,high,medium,public,positive,4,no,high school,near,male,67
 28,73,medium,high,yes,7,65,high,yes,3.0,high,high,public,positive,3,no,postgraduate,near,male,72
 32,75,low,low,no,7,55,medium,yes,1.0,medium,medium,public,neutral,4,no,high school,moderate,male,66
@@ -3592,7 +3592,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 26,66,medium,medium,yes,7,67,high,yes,3.0,medium,medium,public,negative,4,no,high school,moderate,female,66
 24,60,medium,medium,yes,10,60,low,yes,3.0,low,high,private,neutral,2,no,postgraduate,near,female,65
 34,81,medium,medium,yes,9,82,low,yes,1.0,medium,high,public,negative,2,no,high school,near,male,71
-11,64,medium,low,yes,8,67,high,no,1.0,medium,medium,public,neutral,2,yes,college,near,male,59
+11,64,medium,low,yes,8,67,high,no,1.0,medium,medium,public,neutral,2,yes,college,near,male,58
 28,76,medium,medium,no,9,91,medium,yes,0.0,low,high,private,neutral,3,no,high school,moderate,male,68
 27,84,medium,medium,no,8,98,medium,yes,0.0,low,medium,public,neutral,4,no,high school,moderate,male,69
 14,71,high,low,yes,6,61,low,yes,0.0,low,medium,public,positive,3,no,postgraduate,near,female,63
@@ -3601,7 +3601,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 19,98,medium,low,yes,6,73,medium,yes,3.0,low,medium,private,negative,3,no,college,near,male,69
 15,64,high,medium,no,9,65,medium,yes,2.0,medium,medium,public,neutral,2,no,high school,near,male,63
 16,66,low,high,yes,7,99,medium,yes,1.0,low,medium,public,positive,3,no,college,near,female,65
-32,98,low,high,no,5,89,medium,yes,2.0,high,low,private,positive,3,no,college,near,male,75
+32,98,low,high,no,5,89,medium,yes,2.0,high,low,private,positive,3,no,college,near,male,76
 20,62,high,medium,yes,6,98,high,yes,0.0,high,high,public,neutral,3,no,postgraduate,near,male,67
 25,99,low,medium,no,8,69,medium,no,1.0,low,high,public,positive,3,no,postgraduate,moderate,male,70
 15,60,medium,low,no,9,65,medium,yes,1.0,medium,high,public,negative,5,no,college,moderate,male,60
@@ -3715,7 +3715,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 7,92,low,medium,yes,4,51,medium,yes,0.0,high,medium,public,positive,1,no,high school,near,female,63
 26,72,medium,low,no,7,72,low,yes,2.0,medium,low,public,neutral,4,no,high school,near,female,65
 19,94,high,low,yes,7,75,medium,yes,2.0,high,medium,public,negative,5,no,college,near,female,71
-36,90,high,high,no,8,92,high,yes,2.0,medium,high,private,neutral,1,no,high school,near,female,75
+36,90,high,high,no,8,92,high,yes,2.0,medium,high,private,neutral,1,no,high school,near,female,78
 34,72,medium,high,yes,9,88,low,yes,1.0,high,medium,private,positive,3,no,postgraduate,near,male,73
 19,77,low,medium,no,5,90,low,yes,1.0,low,high,private,neutral,3,no,college,near,female,65
 19,67,low,medium,yes,7,93,high,yes,0.0,medium,medium,public,positive,4,no,postgraduate,near,male,66
@@ -3814,7 +3814,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 15,65,high,low,yes,7,56,medium,no,3.0,high,medium,private,positive,3,yes,high school,near,female,61
 21,91,low,high,yes,9,79,medium,yes,2.0,low,medium,private,neutral,3,no,college,far,female,69
 12,63,high,medium,no,9,70,low,yes,1.0,high,low,public,positive,3,no,college,near,female,62
-9,61,low,high,yes,7,53,medium,yes,0.0,medium,medium,public,positive,2,yes,postgraduate,far,male,59
+9,61,low,high,yes,7,53,medium,yes,0.0,medium,medium,public,positive,2,yes,postgraduate,far,male,58
 18,96,medium,high,yes,6,92,medium,yes,2.0,medium,medium,public,positive,3,no,high school,far,male,71
 19,83,high,low,no,6,69,medium,yes,3.5,medium,medium,private,positive,2,no,postgraduate,far,male,69
 18,74,high,medium,no,8,75,high,yes,1.0,high,high,public,positive,3,no,postgraduate,moderate,male,68
@@ -3923,7 +3923,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 21,87,medium,medium,no,6,90,high,yes,3.0,high,medium,public,negative,4,no,high school,near,male,71
 18,74,medium,high,yes,8,91,medium,yes,0.0,medium,high,private,positive,2,no,high school,near,female,67
 10,73,medium,medium,yes,8,93,high,yes,3.0,low,medium,public,positive,2,yes,high school,moderate,male,64
-18,87,low,low,no,8,79,high,yes,1.0,low,high,public,negative,4,no,college,near,male,75
+18,87,low,low,no,8,79,high,yes,1.0,low,high,public,negative,4,no,college,near,male,82
 18,69,medium,high,yes,10,85,medium,yes,2.0,high,medium,private,positive,0,no,college,moderate,female,66
 26,77,low,medium,yes,6,63,low,yes,1.0,low,high,public,negative,4,no,high school,near,male,66
 23,68,high,medium,yes,9,55,medium,yes,1.0,medium,medium,public,positive,3,no,high school,moderate,male,65
@@ -3931,7 +3931,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 21,99,medium,high,no,7,51,high,yes,2.0,medium,low,private,neutral,2,no,postgraduate,near,female,72
 24,77,high,medium,yes,10,73,medium,yes,3.0,medium,medium,public,positive,3,no,high school,near,male,70
 29,99,medium,medium,yes,7,55,low,yes,0.0,medium,medium,private,positive,3,no,high school,moderate,male,71
-25,66,high,medium,yes,7,55,medium,yes,3.5,medium,medium,public,neutral,2,yes,high school,moderate,female,75
+25,66,high,medium,yes,7,55,medium,yes,3.5,medium,medium,public,neutral,2,yes,high school,moderate,female,84
 25,83,high,high,yes,7,94,low,yes,2.0,low,high,public,positive,3,yes,college,moderate,male,72
 20,68,medium,high,yes,5,82,medium,no,1.0,low,high,public,positive,3,no,postgraduate,near,female,67
 22,92,high,low,no,8,82,medium,yes,2.0,medium,medium,private,neutral,5,no,postgraduate,near,male,72
@@ -4032,7 +4032,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 25,99,medium,medium,no,8,83,medium,yes,1.0,medium,medium,public,neutral,2,no,college,near,female,72
 12,77,low,low,yes,7,85,medium,yes,1.0,medium,medium,public,positive,3,no,college,far,male,62
 13,66,high,medium,yes,9,51,low,yes,3.0,medium,medium,private,positive,2,no,postgraduate,moderate,male,63
-4,79,low,medium,yes,7,64,low,yes,0.0,medium,medium,public,negative,3,no,postgraduate,far,female,59
+4,79,low,medium,yes,7,64,low,yes,0.0,medium,medium,public,negative,3,no,postgraduate,far,female,58
 15,87,medium,medium,no,10,83,medium,yes,1.0,high,high,private,positive,3,no,high school,near,male,68
 26,93,high,high,yes,6,94,low,yes,1.0,medium,high,public,negative,2,no,high school,near,female,74
 23,78,medium,medium,yes,5,83,medium,yes,1.0,medium,medium,public,positive,3,no,high school,near,male,68
@@ -4090,7 +4090,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 27,71,medium,medium,yes,9,51,medium,no,3.0,high,medium,public,neutral,1,no,college,far,female,66
 18,64,medium,medium,yes,6,76,medium,yes,2.0,medium,high,public,positive,4,no,high school,near,male,65
 13,93,low,low,no,7,72,high,yes,2.0,medium,medium,private,positive,2,no,postgraduate,near,female,67
-29,94,high,medium,no,7,79,medium,yes,3.5,low,high,private,neutral,4,no,college,near,female,75
+29,94,high,medium,no,7,79,medium,yes,3.5,low,high,private,neutral,4,no,college,near,female,76
 19,69,medium,medium,yes,9,96,medium,yes,0.0,high,high,private,positive,3,no,high school,moderate,female,66
 21,63,medium,medium,yes,6,64,low,yes,1.0,high,high,public,negative,3,no,high school,near,male,63
 27,90,medium,medium,no,7,82,medium,yes,0.0,medium,medium,public,positive,3,no,college,moderate,female,71
@@ -4191,7 +4191,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 20,64,medium,high,no,6,53,high,no,3.5,high,medium,private,neutral,4,no,college,moderate,female,65
 22,92,high,high,no,9,72,low,yes,1.0,low,high,public,neutral,4,yes,postgraduate,near,male,71
 22,97,medium,medium,yes,6,57,medium,yes,0.0,medium,high,private,positive,2,no,high school,near,male,70
-28,90,low,medium,yes,9,91,medium,yes,0.0,medium,medium,public,positive,2,no,college,moderate,female,75
+28,90,low,medium,yes,9,91,medium,yes,0.0,medium,medium,public,positive,2,no,college,moderate,female,98
 5,93,medium,medium,yes,7,81,medium,no,1.0,low,high,public,neutral,2,no,college,near,female,65
 6,69,high,medium,yes,10,94,medium,no,1.0,medium,medium,private,neutral,4,no,postgraduate,near,female,63
 17,71,medium,medium,yes,10,53,low,yes,0.0,low,low,public,positive,3,no,high school,moderate,male,61
@@ -4246,14 +4246,14 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 20,89,low,low,yes,6,74,low,yes,1.0,medium,low,private,positive,3,no,postgraduate,far,male,66
 11,69,high,medium,yes,9,100,low,yes,1.0,low,medium,public,neutral,5,no,high school,near,male,64
 21,89,high,medium,yes,7,51,low,yes,1.0,medium,medium,public,positive,4,no,high school,near,female,69
-33,92,high,high,yes,7,67,low,yes,3.5,high,medium,public,positive,5,no,high school,near,female,75
+33,92,high,high,yes,7,67,low,yes,3.5,high,medium,public,positive,5,no,high school,near,female,78
 23,76,low,high,yes,7,96,low,yes,2.0,medium,medium,private,neutral,4,no,high school,near,female,68
 20,90,high,high,no,8,82,medium,yes,2.0,high,medium,private,negative,4,yes,high school,moderate,female,70
 26,76,low,medium,yes,6,77,medium,yes,1.0,medium,medium,private,neutral,5,no,high school,near,male,68
 21,87,low,low,yes,6,82,medium,yes,0.0,medium,high,public,neutral,5,no,postgraduate,near,female,68
 21,91,medium,medium,no,5,66,low,yes,1.0,high,medium,public,positive,3,no,college,near,female,69
 13,100,medium,low,yes,8,54,medium,yes,0.0,medium,high,public,positive,3,no,college,near,female,68
-21,74,high,low,yes,8,64,medium,yes,3.0,low,low,public,neutral,1,no,college,far,male,75
+21,74,high,low,yes,8,64,medium,yes,3.0,low,low,public,neutral,1,no,college,far,male,80
 26,76,medium,medium,yes,8,67,high,yes,1.0,low,medium,public,negative,3,no,high school,moderate,male,67
 15,67,low,medium,yes,5,74,medium,yes,1.0,high,high,public,positive,2,no,postgraduate,near,male,64
 29,68,medium,low,no,6,70,low,yes,0.0,medium,medium,public,negative,2,no,postgraduate,near,male,64
@@ -4296,7 +4296,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 27,81,medium,high,yes,8,93,medium,yes,0.0,high,high,public,neutral,3,no,college,near,female,72
 11,97,low,low,yes,7,69,medium,yes,3.0,low,medium,public,positive,2,no,high school,near,female,66
 14,86,high,medium,no,6,57,medium,yes,3.0,high,high,private,neutral,2,no,college,near,female,68
-21,67,medium,medium,yes,6,88,medium,yes,1.0,low,medium,private,positive,5,no,postgraduate,near,female,75
+21,67,medium,medium,yes,6,88,medium,yes,1.0,low,medium,private,positive,5,no,postgraduate,near,female,95
 14,87,medium,low,yes,8,74,medium,yes,0.0,medium,high,public,neutral,3,yes,college,moderate,male,64
 15,77,medium,medium,yes,7,52,medium,yes,1.0,medium,medium,public,neutral,2,no,college,near,male,64
 17,84,low,high,yes,7,89,medium,yes,2.0,high,medium,public,positive,2,no,high school,moderate,male,68
@@ -4354,7 +4354,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 19,80,high,high,yes,7,67,medium,yes,2.0,low,high,public,neutral,2,yes,postgraduate,near,female,68
 10,67,high,medium,yes,8,92,medium,yes,1.0,medium,high,public,negative,4,no,postgraduate,near,male,65
 22,96,low,high,yes,7,99,high,yes,3.5,low,medium,public,positive,4,no,college,moderate,male,74
-24,70,medium,high,yes,9,52,high,yes,1.0,low,medium,public,positive,2,no,postgraduate,moderate,male,75
+24,70,medium,high,yes,9,52,high,yes,1.0,low,medium,public,positive,2,no,postgraduate,moderate,male,85
 21,64,medium,medium,no,9,82,medium,yes,2.0,low,medium,public,neutral,3,no,college,moderate,male,64
 18,90,low,medium,yes,5,62,high,yes,3.0,medium,medium,private,neutral,2,no,high school,moderate,female,67
 24,67,high,high,yes,9,86,medium,yes,2.0,medium,medium,public,negative,2,no,college,near,female,68
@@ -4404,7 +4404,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 15,92,low,medium,no,8,69,medium,yes,1.0,high,medium,private,neutral,4,no,postgraduate,near,male,68
 22,98,high,medium,yes,6,64,low,yes,0.0,medium,high,public,positive,3,no,high school,moderate,female,71
 19,77,high,medium,yes,5,86,high,yes,0.0,medium,low,public,negative,4,yes,high school,near,male,66
-25,98,medium,medium,yes,7,90,high,yes,1.0,high,low,public,neutral,4,no,postgraduate,near,male,75
+25,98,medium,medium,yes,7,90,high,yes,1.0,high,low,public,neutral,4,no,postgraduate,near,male,94
 19,93,low,high,yes,7,66,low,yes,1.0,medium,medium,private,neutral,3,no,high school,near,female,68
 18,79,medium,medium,no,7,81,medium,no,1.0,medium,high,private,positive,4,no,college,moderate,female,66
 23,87,high,low,no,6,59,medium,yes,3.5,medium,high,public,neutral,2,no,high school,near,male,70
@@ -4424,7 +4424,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 28,72,low,low,no,8,85,high,yes,3.5,low,medium,private,negative,2,no,high school,near,female,66
 26,62,low,medium,no,6,79,medium,yes,1.0,low,medium,public,positive,3,yes,college,near,female,63
 15,60,medium,medium,no,7,66,high,yes,2.0,high,medium,public,neutral,4,no,high school,near,male,62
-13,64,medium,high,no,6,57,low,yes,1.0,low,low,public,neutral,3,yes,high school,moderate,female,59
+13,64,medium,high,no,6,57,low,yes,1.0,low,low,public,neutral,3,yes,high school,moderate,female,58
 22,92,medium,low,no,5,72,low,yes,0.0,medium,medium,private,negative,4,no,college,moderate,male,67
 15,98,medium,medium,yes,7,89,low,no,2.0,low,low,public,neutral,3,no,college,moderate,male,68
 21,77,high,medium,no,10,87,low,yes,1.0,low,medium,public,neutral,3,no,college,near,male,67
@@ -4457,7 +4457,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 22,71,medium,high,yes,7,94,medium,yes,1.0,medium,medium,public,neutral,4,no,high school,near,male,68
 13,98,high,low,yes,7,81,medium,yes,1.0,medium,low,private,negative,3,no,postgraduate,near,male,69
 12,95,medium,medium,no,4,87,medium,yes,0.0,low,medium,public,positive,3,no,high school,moderate,male,67
-11,63,medium,high,yes,9,51,high,yes,0.0,low,low,public,negative,3,yes,college,moderate,male,59
+11,63,medium,high,yes,9,51,high,yes,0.0,low,low,public,negative,3,yes,college,moderate,male,58
 24,81,low,medium,yes,6,67,high,yes,0.0,medium,high,public,negative,2,no,high school,far,male,66
 27,69,medium,high,yes,7,89,low,yes,2.0,high,high,private,neutral,1,no,high school,moderate,male,69
 31,76,medium,high,yes,7,70,low,yes,3.0,low,medium,public,neutral,3,no,college,moderate,male,70
@@ -4530,7 +4530,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 20,62,medium,low,yes,6,80,high,no,1.0,medium,high,public,neutral,3,no,college,moderate,female,62
 17,80,medium,medium,yes,7,52,high,yes,2.0,medium,medium,private,neutral,3,no,postgraduate,near,female,67
 21,95,low,high,yes,8,69,medium,no,0.0,low,high,public,negative,3,no,postgraduate,near,male,69
-26,69,high,high,no,7,95,low,no,0.0,medium,medium,public,negative,3,no,postgraduate,near,female,75
+26,69,high,high,no,7,95,low,no,0.0,medium,medium,public,negative,3,no,postgraduate,near,female,93
 23,77,medium,high,no,6,71,low,yes,3.0,medium,low,private,positive,4,no,high school,moderate,male,68
 15,98,medium,medium,yes,9,72,medium,yes,1.0,low,high,public,neutral,2,no,college,near,female,69
 24,77,medium,medium,yes,10,53,high,yes,2.0,high,medium,public,neutral,4,no,college,moderate,male,68
@@ -4582,7 +4582,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 21,80,low,high,yes,7,60,medium,yes,1.0,medium,high,public,positive,2,no,college,moderate,male,67
 14,97,low,medium,yes,5,88,medium,yes,2.0,high,medium,public,positive,3,no,postgraduate,near,male,71
 20,93,high,medium,no,7,60,high,yes,0.0,low,high,public,neutral,3,no,high school,near,male,69
-25,73,medium,medium,yes,7,56,medium,yes,2.0,high,medium,public,neutral,4,no,high school,near,female,75
+25,73,medium,medium,yes,7,56,medium,yes,2.0,high,medium,public,neutral,4,no,high school,near,female,93
 19,99,high,medium,yes,6,100,medium,yes,1.0,low,medium,private,positive,1,no,high school,moderate,male,72
 27,88,medium,high,no,7,72,medium,yes,1.0,low,high,public,positive,1,no,high school,near,female,71
 26,62,medium,medium,no,6,59,medium,yes,1.0,medium,medium,public,neutral,3,no,high school,moderate,male,63
@@ -4634,11 +4634,11 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 22,98,medium,low,no,10,73,medium,yes,1.0,low,low,public,negative,4,yes,college,near,female,68
 25,87,high,high,yes,8,84,low,yes,2.0,high,medium,public,positive,4,no,college,moderate,male,73
 16,82,medium,medium,yes,6,99,medium,yes,3.0,high,medium,public,positive,2,no,high school,near,male,69
-4,60,medium,medium,yes,5,76,medium,yes,0.0,medium,high,private,neutral,4,no,high school,moderate,female,59
+4,60,medium,medium,yes,5,76,medium,yes,0.0,medium,high,private,neutral,4,no,high school,moderate,female,58
 23,62,high,low,no,5,87,medium,yes,1.0,high,low,private,positive,3,no,high school,near,male,65
 13,68,medium,medium,yes,8,95,medium,yes,2.0,low,low,private,positive,4,no,high school,moderate,male,63
 8,67,low,low,no,5,77,low,yes,1.0,medium,high,public,positive,2,no,college,near,male,59
-4,70,medium,medium,yes,7,58,medium,yes,0.0,medium,medium,private,neutral,2,no,high school,moderate,male,59
+4,70,medium,medium,yes,7,58,medium,yes,0.0,medium,medium,private,neutral,2,no,high school,moderate,male,58
 25,72,medium,medium,yes,4,92,high,yes,1.0,low,medium,private,negative,2,yes,high school,near,male,66
 21,74,medium,high,yes,8,79,medium,yes,0.0,low,high,private,positive,4,no,high school,near,male,67
 19,77,high,medium,yes,8,88,medium,no,3.0,low,medium,public,positive,3,no,college,moderate,male,67
@@ -4665,7 +4665,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 17,83,low,medium,no,6,64,medium,yes,1.0,medium,medium,private,positive,4,no,high school,near,female,65
 24,62,medium,low,yes,7,50,medium,yes,1.0,high,high,private,negative,2,no,postgraduate,near,male,64
 19,83,high,low,yes,8,54,medium,yes,1.0,low,medium,private,positive,4,no,high school,moderate,male,66
-16,71,low,low,yes,6,59,high,yes,1.0,low,high,public,positive,3,no,postgraduate,near,male,75
+16,71,low,low,yes,6,59,high,yes,1.0,low,high,public,positive,3,no,postgraduate,near,male,82
 30,61,low,high,yes,8,82,low,yes,2.0,low,high,public,neutral,3,no,postgraduate,near,female,68
 15,93,medium,medium,no,8,61,high,yes,1.0,medium,medium,public,neutral,4,no,high school,near,female,67
 20,71,low,high,yes,6,56,high,yes,3.5,medium,medium,private,positive,5,no,college,near,male,68
@@ -4696,7 +4696,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 19,69,medium,medium,yes,9,94,medium,yes,1.0,low,high,public,positive,3,no,high school,moderate,male,65
 19,60,medium,medium,no,8,73,high,yes,3.0,medium,low,private,neutral,3,no,high school,near,male,63
 23,74,medium,high,yes,6,76,medium,yes,0.0,medium,high,private,negative,4,no,high school,near,male,67
-28,99,high,low,no,5,100,medium,yes,3.5,medium,medium,private,neutral,5,no,high school,moderate,female,75
+28,99,high,low,no,5,100,medium,yes,3.5,medium,medium,private,neutral,5,no,high school,moderate,female,76
 21,88,medium,medium,no,8,94,medium,yes,0.0,medium,high,public,neutral,3,no,college,near,male,70
 17,76,medium,high,yes,8,95,low,yes,1.0,low,medium,private,neutral,4,no,postgraduate,near,female,67
 14,68,high,high,yes,9,79,low,yes,2.0,low,medium,private,positive,4,no,college,near,female,66
@@ -4727,7 +4727,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 4,81,medium,medium,yes,8,66,medium,yes,1.0,low,medium,public,negative,2,no,college,near,male,60
 21,73,high,medium,no,7,98,high,yes,0.0,high,high,public,positive,4,yes,postgraduate,near,male,69
 17,82,high,medium,no,7,88,medium,yes,1.0,medium,medium,public,negative,1,yes,high school,near,male,66
-30,98,medium,high,yes,7,96,medium,yes,1.0,medium,medium,private,neutral,3,no,postgraduate,near,female,75
+30,98,medium,high,yes,7,96,medium,yes,1.0,medium,medium,private,neutral,3,no,postgraduate,near,female,77
 20,68,medium,low,no,9,65,low,yes,1.0,high,medium,public,negative,5,no,college,near,male,63
 13,86,medium,low,yes,5,54,medium,yes,3.0,high,high,public,neutral,3,yes,college,near,male,66
 20,62,high,medium,yes,4,78,medium,no,1.0,high,medium,private,positive,4,no,high school,moderate,female,64
@@ -4773,12 +4773,12 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 14,84,high,high,no,8,99,medium,no,3.0,medium,high,public,neutral,4,no,postgraduate,near,female,70
 24,82,medium,high,no,8,50,medium,yes,0.0,medium,medium,public,positive,2,no,postgraduate,moderate,male,68
 20,64,medium,medium,no,6,81,medium,yes,0.0,high,high,public,positive,1,no,high school,moderate,female,64
-6,73,medium,medium,no,8,93,low,yes,0.0,low,medium,private,neutral,1,yes,high school,far,female,59
+6,73,medium,medium,no,8,93,low,yes,0.0,low,medium,private,neutral,1,yes,high school,far,female,58
 25,62,medium,medium,yes,7,95,low,yes,1.0,high,medium,public,neutral,4,yes,college,near,male,65
 20,76,medium,high,yes,7,86,medium,yes,2.0,medium,medium,public,negative,5,no,high school,near,female,68
 27,68,low,medium,no,8,79,medium,yes,2.0,low,high,private,negative,1,yes,postgraduate,moderate,female,64
 13,82,medium,high,no,5,73,low,yes,3.5,low,medium,public,negative,4,no,high school,near,male,66
-4,88,medium,high,yes,4,72,high,yes,3.0,medium,medium,private,negative,2,no,college,near,male,75
+4,88,medium,high,yes,4,72,high,yes,3.0,medium,medium,private,negative,2,no,college,near,male,92
 22,81,high,medium,yes,9,71,medium,yes,2.0,high,low,public,negative,4,no,high school,near,male,69
 22,77,medium,high,no,7,85,low,yes,2.0,low,medium,public,neutral,2,no,college,near,male,68
 10,75,medium,medium,no,8,87,low,yes,2.0,medium,medium,public,positive,4,yes,high school,near,female,63
@@ -5016,7 +5016,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 20,71,high,medium,no,5,52,high,yes,1.0,medium,high,public,neutral,3,no,high school,moderate,male,65
 17,74,medium,medium,yes,7,62,medium,yes,2.0,high,medium,public,positive,4,no,high school,near,male,66
 7,86,high,medium,no,7,68,medium,yes,3.5,low,medium,public,positive,4,no,postgraduate,moderate,male,67
-32,95,medium,medium,yes,7,66,high,yes,3.5,high,medium,private,negative,3,no,college,near,male,75
+32,95,medium,medium,yes,7,66,high,yes,3.5,high,medium,private,negative,3,no,college,near,male,76
 21,67,low,high,yes,7,55,high,yes,2.0,high,high,private,positive,3,no,high school,moderate,female,66
 22,94,low,low,no,9,53,high,yes,1.0,medium,high,public,neutral,3,no,college,near,female,68
 20,65,high,medium,yes,8,71,low,yes,2.0,low,medium,private,neutral,3,yes,college,near,female,63
@@ -5124,7 +5124,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 18,90,low,high,no,7,52,high,yes,2.0,medium,high,public,negative,2,no,high school,near,male,67
 20,89,high,medium,yes,6,70,low,yes,1.0,low,medium,private,positive,3,no,high school,moderate,female,68
 24,62,low,high,yes,6,91,medium,yes,2.0,medium,medium,public,neutral,3,no,high school,moderate,female,65
-16,82,medium,medium,no,7,56,low,yes,0.0,high,high,private,negative,1,yes,high school,far,female,75
+16,82,medium,medium,no,7,56,low,yes,0.0,high,high,private,negative,1,yes,high school,far,female,79
 18,79,high,low,no,9,51,high,yes,2.0,medium,medium,private,positive,3,no,high school,near,male,66
 20,97,medium,medium,yes,8,56,low,yes,1.0,low,medium,private,neutral,2,no,high school,near,female,68
 21,70,low,low,yes,8,84,medium,yes,1.0,high,high,public,positive,3,yes,postgraduate,near,male,65
@@ -5197,7 +5197,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 17,61,low,high,yes,7,75,medium,no,2.0,medium,high,public,negative,4,no,college,near,female,62
 26,98,high,low,no,8,90,low,yes,1.0,high,low,public,positive,2,yes,postgraduate,moderate,female,72
 18,67,high,medium,no,5,52,high,yes,0.0,medium,medium,private,neutral,4,no,postgraduate,moderate,male,64
-15,60,high,medium,no,7,63,low,yes,0.0,low,high,public,positive,1,yes,high school,far,female,59
+15,60,high,medium,no,7,63,low,yes,0.0,low,high,public,positive,1,yes,high school,far,female,58
 26,69,high,medium,no,9,55,low,yes,1.0,low,medium,public,neutral,3,no,college,near,male,66
 18,69,medium,low,yes,5,73,low,yes,1.0,low,high,public,positive,4,no,postgraduate,moderate,male,64
 17,77,medium,high,yes,10,93,low,yes,3.0,high,high,private,positive,1,no,college,far,female,68
@@ -5506,7 +5506,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 17,82,medium,high,yes,10,82,high,yes,1.0,medium,medium,private,positive,2,no,high school,moderate,male,68
 25,88,high,high,yes,9,58,low,yes,0.0,low,medium,public,negative,4,no,postgraduate,near,male,70
 14,84,medium,medium,yes,6,96,medium,no,2.0,low,medium,private,neutral,2,no,postgraduate,far,male,66
-5,65,low,high,no,7,71,medium,yes,0.0,low,medium,private,negative,2,no,college,far,male,59
+5,65,low,high,no,7,71,medium,yes,0.0,low,medium,private,negative,2,no,college,far,male,56
 19,99,medium,high,yes,8,88,high,no,1.0,low,high,public,positive,3,no,high school,far,female,71
 19,65,low,high,no,10,58,medium,yes,2.0,medium,high,private,positive,3,no,postgraduate,moderate,female,64
 21,70,medium,medium,no,8,74,low,yes,2.0,medium,medium,public,positive,3,no,postgraduate,far,male,65
@@ -5518,7 +5518,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 23,97,medium,medium,yes,6,99,low,yes,1.0,low,medium,private,positive,3,no,high school,near,female,72
 24,61,medium,medium,no,10,64,low,yes,0.0,low,medium,private,positive,3,no,high school,near,female,62
 13,94,low,medium,yes,7,56,high,yes,2.0,low,high,public,neutral,4,no,college,near,male,67
-11,69,low,medium,yes,8,65,low,yes,0.0,low,medium,public,negative,2,no,college,moderate,male,59
+11,69,low,medium,yes,8,65,low,yes,0.0,low,medium,public,negative,2,no,college,moderate,male,58
 16,94,low,medium,yes,6,66,medium,yes,3.0,medium,high,public,negative,4,no,college,near,female,69
 16,66,medium,low,no,9,56,medium,yes,0.0,low,high,private,positive,4,yes,college,near,female,60
 25,83,high,high,yes,7,85,high,yes,2.0,low,medium,public,negative,4,no,college,near,male,72
@@ -5718,7 +5718,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 23,83,high,medium,no,5,74,medium,yes,3.0,low,medium,public,negative,2,no,postgraduate,near,male,69
 18,70,high,low,yes,7,60,medium,yes,1.0,medium,high,public,positive,3,no,college,near,male,65
 23,93,medium,low,yes,9,94,high,yes,2.0,medium,low,private,negative,3,no,high school,moderate,female,70
-9,64,medium,low,yes,10,68,low,yes,0.0,medium,medium,private,negative,3,no,high school,near,male,59
+9,64,medium,low,yes,10,68,low,yes,0.0,medium,medium,private,negative,3,no,high school,near,male,57
 17,93,medium,medium,no,8,87,low,yes,2.0,high,high,private,negative,3,no,college,moderate,male,69
 30,84,high,low,yes,5,66,low,yes,0.0,medium,low,public,positive,2,no,postgraduate,near,female,70
 15,67,low,medium,yes,5,65,medium,yes,3.5,medium,medium,private,negative,2,no,college,near,male,63
@@ -5789,7 +5789,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 32,83,high,medium,yes,10,68,medium,no,3.0,low,medium,private,positive,4,no,high school,moderate,female,71
 10,63,high,medium,no,9,59,low,yes,0.0,medium,high,public,positive,5,no,postgraduate,moderate,male,61
 21,70,medium,medium,yes,7,83,medium,yes,1.0,medium,medium,public,neutral,3,no,high school,far,male,65
-10,64,medium,low,no,9,76,low,yes,1.0,low,medium,private,positive,1,no,high school,near,female,59
+10,64,medium,low,no,9,76,low,yes,1.0,low,medium,private,positive,1,no,high school,near,female,58
 5,73,high,low,yes,6,89,high,yes,1.0,medium,medium,public,neutral,2,no,high school,near,male,62
 22,95,high,low,no,5,55,medium,yes,2.0,high,high,public,neutral,0,yes,college,near,female,69
 21,74,medium,low,yes,8,70,medium,yes,1.0,medium,medium,public,neutral,3,no,postgraduate,far,male,65
@@ -5906,7 +5906,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 15,91,medium,high,yes,4,72,low,yes,1.0,high,high,private,neutral,2,no,high school,near,male,69
 18,90,high,medium,no,7,81,medium,yes,2.0,medium,low,public,negative,3,no,postgraduate,moderate,male,69
 19,93,medium,high,no,7,95,low,yes,3.0,medium,medium,private,negative,3,no,high school,near,female,71
-4,60,medium,low,yes,6,78,low,yes,1.0,low,medium,public,positive,1,no,postgraduate,near,female,59
+4,60,medium,low,yes,6,78,low,yes,1.0,low,medium,public,positive,1,no,postgraduate,near,female,57
 30,80,high,high,no,5,80,medium,yes,0.0,low,medium,private,positive,4,no,postgraduate,near,female,72
 15,88,low,medium,yes,4,67,medium,yes,1.0,medium,high,private,positive,4,no,high school,far,female,66
 23,66,medium,medium,yes,6,80,medium,yes,1.0,medium,medium,public,positive,3,no,college,near,female,66
@@ -5965,7 +5965,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 12,74,low,medium,no,8,54,medium,yes,2.0,medium,medium,private,positive,5,no,postgraduate,moderate,female,63
 28,64,medium,medium,no,8,78,low,yes,2.0,medium,medium,private,negative,3,no,postgraduate,near,male,66
 21,77,medium,medium,yes,8,88,low,yes,2.0,high,medium,private,positive,1,no,college,moderate,female,68
-25,99,medium,medium,yes,7,77,medium,yes,0.0,high,high,public,neutral,3,no,high school,near,male,75
+25,99,medium,medium,yes,7,77,medium,yes,0.0,high,high,public,neutral,3,no,high school,near,male,97
 27,73,low,low,no,9,97,medium,yes,2.0,medium,high,public,neutral,1,no,high school,near,female,67
 22,95,medium,medium,no,7,85,medium,yes,0.0,medium,medium,private,positive,4,no,college,near,male,71
 16,94,low,low,yes,8,56,low,yes,2.0,low,high,public,positive,2,no,college,near,female,66
@@ -5988,7 +5988,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 15,94,high,medium,yes,8,52,low,yes,1.0,medium,medium,private,positive,2,no,college,far,female,67
 20,87,medium,high,no,10,75,low,yes,3.0,medium,medium,private,neutral,2,no,college,near,female,70
 23,72,low,high,yes,6,84,medium,yes,1.0,high,high,public,neutral,2,no,high school,near,male,67
-18,61,medium,low,yes,6,91,high,yes,3.0,medium,high,public,positive,3,no,college,moderate,female,75
+18,61,medium,low,yes,6,91,high,yes,3.0,medium,high,public,positive,3,no,college,moderate,female,80
 23,97,medium,high,yes,6,80,low,yes,1.0,low,low,public,negative,2,no,college,moderate,male,70
 22,83,high,medium,no,8,99,low,yes,3.5,high,high,public,negative,4,yes,high school,near,female,71
 14,72,medium,low,no,8,75,high,yes,3.5,high,medium,private,positive,2,yes,college,near,male,64
@@ -5999,7 +5999,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 13,86,medium,medium,no,7,80,medium,yes,0.0,low,medium,private,negative,5,no,college,near,male,65
 23,75,low,low,yes,7,68,medium,yes,1.0,high,low,private,neutral,4,yes,high school,near,male,64
 13,72,medium,high,no,8,56,low,yes,1.0,low,high,public,positive,4,no,postgraduate,moderate,female,64
-13,60,low,medium,no,5,67,high,yes,1.0,low,medium,public,positive,4,yes,high school,far,male,59
+13,60,low,medium,no,5,67,high,yes,1.0,low,medium,public,positive,4,yes,high school,far,male,58
 16,93,high,medium,yes,7,52,low,yes,2.0,medium,high,public,neutral,3,no,high school,near,male,69
 14,63,high,low,no,7,79,medium,yes,1.0,low,medium,public,neutral,3,no,high school,near,male,61
 17,85,high,high,yes,6,66,medium,yes,0.0,medium,high,public,neutral,2,no,college,moderate,female,68
@@ -6039,7 +6039,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 10,62,high,high,no,7,51,medium,yes,1.0,medium,high,private,positive,2,no,high school,near,male,61
 25,82,high,high,no,8,94,low,yes,2.0,low,medium,public,neutral,3,no,high school,moderate,male,70
 25,64,medium,medium,yes,4,53,low,yes,1.0,medium,medium,public,neutral,2,no,college,near,male,64
-26,100,high,high,yes,6,76,high,yes,0.0,medium,high,public,negative,4,no,postgraduate,near,male,75
+26,100,high,high,yes,6,76,high,yes,0.0,medium,high,public,negative,4,no,postgraduate,near,male,76
 27,96,medium,medium,yes,6,71,medium,yes,2.0,medium,medium,public,neutral,2,no,college,near,female,73
 33,61,low,low,yes,5,96,medium,yes,2.0,medium,medium,public,negative,3,no,high school,near,male,67
 18,94,medium,medium,yes,7,70,medium,no,2.0,medium,high,public,negative,3,no,college,near,female,69
@@ -6201,7 +6201,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 18,64,medium,medium,yes,6,51,medium,yes,2.0,low,medium,public,positive,1,no,high school,near,female,62
 17,89,medium,medium,yes,6,82,medium,yes,3.0,medium,medium,private,positive,3,no,college,near,female,70
 13,100,low,low,yes,4,54,low,yes,3.0,low,low,public,positive,2,no,high school,near,female,65
-34,93,high,medium,yes,6,93,high,yes,2.0,low,high,public,neutral,4,no,high school,near,male,75
+34,93,high,medium,yes,6,93,high,yes,2.0,low,high,public,neutral,4,no,high school,near,male,77
 31,82,medium,high,yes,5,98,medium,yes,0.0,low,low,public,neutral,3,no,high school,near,male,71
 13,79,medium,high,no,7,70,high,yes,3.5,low,medium,public,positive,3,yes,high school,near,female,66
 29,93,medium,medium,no,5,93,medium,yes,2.0,low,medium,public,positive,3,no,postgraduate,near,female,74
@@ -6346,7 +6346,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 20,82,low,medium,no,8,85,low,yes,1.0,medium,high,private,neutral,3,yes,postgraduate,near,female,66
 20,61,medium,high,no,9,81,medium,yes,0.0,high,high,public,neutral,2,yes,high school,near,male,63
 17,62,medium,medium,yes,7,78,medium,yes,0.0,medium,high,public,negative,3,no,high school,near,male,62
-28,96,high,low,yes,4,98,high,yes,1.0,high,high,public,positive,3,no,high school,near,male,75
+28,96,high,low,yes,4,98,high,yes,1.0,high,high,public,positive,3,no,high school,near,male,98
 13,95,high,high,yes,5,92,low,yes,1.0,medium,medium,private,positive,2,no,college,near,female,71
 16,74,high,medium,no,8,80,medium,yes,0.0,low,medium,public,positive,4,no,postgraduate,near,female,66
 36,96,medium,medium,no,7,77,medium,yes,2.0,medium,medium,public,positive,3,no,high school,moderate,female,75
@@ -6392,7 +6392,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 8,96,medium,medium,yes,8,100,high,yes,1.0,high,medium,public,negative,4,no,high school,moderate,male,68
 20,98,low,medium,yes,6,80,low,yes,3.5,medium,medium,public,positive,4,no,college,near,male,72
 10,95,medium,high,yes,5,93,high,yes,0.0,low,high,public,positive,3,no,high school,moderate,male,69
-16,83,low,medium,yes,8,92,low,yes,2.0,high,high,public,positive,4,no,postgraduate,near,female,75
+16,83,low,medium,yes,8,92,low,yes,2.0,high,high,public,positive,4,no,postgraduate,near,female,98
 15,78,medium,high,no,8,97,medium,yes,1.0,medium,medium,public,neutral,4,no,postgraduate,near,male,68
 25,91,medium,low,no,7,86,medium,yes,0.0,medium,medium,public,neutral,5,no,high school,near,female,70
 21,90,medium,medium,no,8,61,medium,yes,1.0,high,medium,public,positive,4,no,postgraduate,moderate,female,69
@@ -6430,7 +6430,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 28,61,high,medium,yes,4,92,low,yes,1.0,medium,high,private,neutral,4,no,college,near,female,68
 17,81,high,medium,no,6,95,high,yes,2.0,medium,medium,private,positive,3,no,high school,near,male,69
 16,73,high,high,yes,7,65,low,yes,1.0,medium,medium,private,positive,4,no,college,moderate,male,66
-4,60,medium,medium,yes,7,55,medium,yes,2.0,low,medium,private,neutral,2,no,postgraduate,near,male,59
+4,60,medium,medium,yes,7,55,medium,yes,2.0,low,medium,private,neutral,2,no,postgraduate,near,male,58
 11,72,high,low,no,8,55,high,yes,0.0,medium,low,public,neutral,3,yes,college,near,male,60
 12,71,high,high,yes,7,78,high,yes,3.0,low,medium,public,positive,4,no,college,moderate,female,67
 21,76,medium,medium,yes,6,65,low,yes,2.0,low,high,public,negative,2,no,high school,near,female,65
@@ -6521,7 +6521,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 22,63,high,low,yes,8,55,medium,yes,2.0,medium,medium,private,neutral,4,no,high school,near,male,64
 18,70,medium,high,no,7,93,medium,yes,0.0,medium,high,public,positive,3,no,college,near,male,67
 20,82,medium,medium,no,6,94,medium,yes,3.0,low,medium,private,positive,2,no,high school,near,male,68
-18,90,high,high,yes,6,54,low,yes,1.0,medium,high,public,negative,3,no,high school,near,female,75
+18,90,high,high,yes,6,54,low,yes,1.0,medium,high,public,negative,3,no,high school,near,female,95
 25,84,medium,medium,yes,7,83,high,yes,1.0,low,medium,public,positive,3,no,high school,moderate,male,70
 27,76,medium,medium,no,9,58,medium,yes,1.0,medium,medium,public,positive,3,no,college,near,female,68
 22,65,low,medium,no,7,82,medium,yes,2.0,medium,high,public,positive,4,yes,college,near,male,65
@@ -6565,7 +6565,7 @@ Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricula
 29,73,low,low,yes,7,63,medium,yes,1.0,low,medium,public,negative,4,no,postgraduate,far,female,65
 20,84,high,medium,yes,6,79,medium,yes,3.0,medium,medium,public,negative,3,no,college,moderate,male,69
 24,89,medium,low,no,4,99,high,yes,1.0,high,high,private,positive,3,no,postgraduate,near,male,73
-29,96,high,medium,no,8,85,low,yes,3.0,high,medium,public,neutral,3,no,postgraduate,near,male,75
+29,96,high,medium,no,8,85,low,yes,3.0,high,medium,public,neutral,3,no,postgraduate,near,male,76
 19,93,medium,high,yes,6,56,medium,yes,0.0,low,high,private,negative,3,no,college,near,male,69
 21,84,high,low,yes,8,87,low,yes,2.0,high,medium,public,positive,1,no,postgraduate,far,female,69
 28,76,medium,medium,yes,6,71,medium,yes,3.0,low,medium,private,positive,2,no,high school,far,female,68

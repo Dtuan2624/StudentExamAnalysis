@@ -23,6 +23,8 @@ def clean_dataset(input_path, output_path):
     numeric_cols = df.select_dtypes(include='number').columns
 
     for col in numeric_cols:
+        if col == 'Exam_Score':
+            continue
         Q1 = df[col].quantile(0.25)
         Q3 = df[col].quantile(0.75)
         IQR = Q3 - Q1

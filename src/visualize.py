@@ -2,12 +2,28 @@ import matplotlib
 import matplotlib.pyplot as plt
 import seaborn as sns
 import os
+import numpy as np
+import pandas as pd
 from pathlib import Path
 
-# style đẹp hơn
-sns.set(style="whitegrid")
+# Cấu hình thẩm mỹ cao cấp cho Matplotlib và Seaborn
+sns.set_theme(style="whitegrid")
+plt.rcParams.update({
+    'font.family': 'sans-serif',
+    'font.sans-serif': ['DejaVu Sans', 'Arial', 'Helvetica'],
+    'axes.edgecolor': '#E5E7EB',
+    'axes.linewidth': 1.2,
+    'grid.color': '#F3F4F6',
+    'grid.alpha': 0.8,
+    'figure.facecolor': '#FFFFFF',
+    'axes.facecolor': '#FAFAFA',
+    'text.color': '#1F2937',
+    'axes.labelcolor': '#4B5563',
+    'xtick.color': '#4B5563',
+    'ytick.color': '#4B5563'
+})
 
-# Define figure output directory
+# Khai báo thư mục lưu biểu đồ
 FIGURE_DIR = Path(__file__).parent.parent / 'figure'
 FIGURE_DIR.mkdir(parents=True, exist_ok=True)
 EDA_DIR = FIGURE_DIR / 'eda'
@@ -15,339 +31,341 @@ EVAL_DIR = FIGURE_DIR / 'evaluation'
 EDA_DIR.mkdir(parents=True, exist_ok=True)
 EVAL_DIR.mkdir(parents=True, exist_ok=True)
 
+# Bảng màu thương hiệu cao cấp
+PALETTE_PRIMARY = ['#3B82F6', '#10B981', '#F59E0B', '#EF4444', '#8B5CF6', '#EC4899']
+
 # ================== 1. PHÂN PHỐI ĐIỂM ==================
 def plot_score_distribution(df):
-    plt.figure(figsize=(8,6))
+    fig, ax = plt.subplots(figsize=(9, 6))
     
-    sns.histplot(df['Exam_Score'], kde=True, bins=20)
+    sns.histplot(df['Exam_Score'], kde=True, bins=20, color='#3B82F6', ax=ax, edgecolor='white', alpha=0.8)
     
-    plt.title("Phân phối điểm số của học sinh", fontsize=14)
-    plt.xlabel("Điểm số (Exam Score)")
-    plt.ylabel("Số lượng học sinh")
+    ax.set_title("Phân Phối Điểm Số Của Học Sinh", fontsize=15, fontweight='bold', pad=15, color='#111827')
+    ax.set_xlabel("Điểm số (Exam Score)", fontsize=11, fontweight='medium')
+    ax.set_ylabel("Số lượng học sinh", fontsize=11, fontweight='medium')
     
     plt.savefig(EDA_DIR / 'score_distribution.png', dpi=300, bbox_inches='tight')
-    plt.close()
+    plt.close(fig)
+    return fig
 
 # ================== 2. THỜI GIAN HỌC VS ĐIỂM ==================
 def plot_study_vs_score(df):
-    plt.figure(figsize=(8,6))
+    fig, ax = plt.subplots(figsize=(9, 6))
     
-    sns.scatterplot(x=df['Hours_Studied'], y=df['Exam_Score'])
+    sns.scatterplot(x='Hours_Studied', y='Exam_Score', data=df, color='#3B82F6', alpha=0.6, edgecolor='white', s=50, ax=ax)
+    sns.regplot(x='Hours_Studied', y='Exam_Score', data=df, scatter=False, color='#EF4444', ax=ax, line_kws={'linewidth': 2})
     
-    plt.title("Mối quan hệ giữa thời gian học và điểm số", fontsize=14)
-    plt.xlabel("Thời gian học (Hours Studied)")
-    plt.ylabel("Điểm số (Exam Score)")
+    ax.set_title("Mối Quan Hệ Giữa Thời Gian Học Và Điểm Số", fontsize=15, fontweight='bold', pad=15, color='#111827')
+    ax.set_xlabel("Thời gian học (Hours Studied)", fontsize=11, fontweight='medium')
+    ax.set_ylabel("Điểm số (Exam Score)", fontsize=11, fontweight='medium')
     
     plt.savefig(EDA_DIR / 'study_vs_score.png', dpi=300, bbox_inches='tight')
-    plt.close()
-
+    plt.close(fig)
+    return fig
 
 # ================== 3. HEATMAP ==================
 def plot_correlation_heatmap(df):
-    plt.figure(figsize=(12,8))
-
-    # chỉ lấy cột số
+    fig, ax = plt.subplots(figsize=(12, 9))
+    
     numeric_df = df.select_dtypes(include=['int64', 'float64'])
-
     corr = numeric_df.corr()
-
-    sns.heatmap(corr, cmap='coolwarm')
-    plt.title("Ma trận tương quan giữa các thuộc tính")
-
+    
+    mask = np.triu(np.ones_like(corr, dtype=bool))
+    
+    sns.heatmap(corr, mask=mask, cmap='coolwarm', annot=True, fmt=".2f", 
+                linewidths=0.5, square=True, cbar_kws={"shrink": .8}, ax=ax)
+    
+    ax.set_title("Ma Trận Tương Quan Giữa Các Thuộc Tính Số", fontsize=16, fontweight='bold', pad=20, color='#111827')
+    
     plt.savefig(EDA_DIR / 'correlation_heatmap.png', dpi=300, bbox_inches='tight')
-    plt.close()
-
+    plt.close(fig)
+    return fig
 
 # ================== 4. BOX PLOT: ĐIỂM SỐ THEO GIỚI TÍNH ==================
 def plot_score_by_gender(df):
-    plt.figure(figsize=(8,6))
+    fig, ax = plt.subplots(figsize=(8, 6))
     
-    sns.boxplot(x='Gender', y='Exam_Score', data=df)
+    sns.boxplot(x='Gender', y='Exam_Score', data=df, palette=['#3B82F6', '#EC4899'], ax=ax, width=0.5, linewidth=1.5)
     
-    plt.title("Phân phối điểm số theo giới tính", fontsize=14)
-    plt.xlabel("Giới tính")
-    plt.ylabel("Điểm số (Exam Score)")
+    ax.set_title("Phân Phối Điểm Số Theo Giới Tính", fontsize=15, fontweight='bold', pad=15, color='#111827')
+    ax.set_xlabel("Giới tính", fontsize=11, fontweight='medium')
+    ax.set_ylabel("Điểm số (Exam Score)", fontsize=11, fontweight='medium')
     
     plt.savefig(EDA_DIR / 'score_by_gender.png', dpi=300, bbox_inches='tight')
-    plt.close()
-
+    plt.close(fig)
+    return fig
 
 # ================== 5. BOX PLOT: ĐIỂM SỐ THEO LOẠI TRƯỜNG ==================
 def plot_score_by_school_type(df):
-    plt.figure(figsize=(8,6))
+    fig, ax = plt.subplots(figsize=(8, 6))
     
-    sns.boxplot(x='School_Type', y='Exam_Score', data=df)
+    sns.boxplot(x='School_Type', y='Exam_Score', data=df, palette=['#10B981', '#F59E0B'], ax=ax, width=0.5, linewidth=1.5)
     
-    plt.title("Phân phối điểm số theo loại trường", fontsize=14)
-    plt.xlabel("Loại trường")
-    plt.ylabel("Điểm số (Exam Score)")
+    ax.set_title("Phân Phối Điểm Số Theo Loại Trường", fontsize=15, fontweight='bold', pad=15, color='#111827')
+    ax.set_xlabel("Loại trường", fontsize=11, fontweight='medium')
+    ax.set_ylabel("Điểm số (Exam Score)", fontsize=11, fontweight='medium')
     
     plt.savefig(EDA_DIR / 'score_by_school.png', dpi=300, bbox_inches='tight')
-    plt.close()
-
+    plt.close(fig)
+    return fig
 
 # ================== 6. BAR PLOT: ĐIỂM TRUNG BÌNH THEO SỰ THAM GIA CỦA PHỤ HUYNH ==================
 def plot_avg_score_by_parental_involvement(df):
-    plt.figure(figsize=(8,6))
+    fig, ax = plt.subplots(figsize=(9, 6))
     
-    avg_scores = df.groupby('Parental_Involvement')['Exam_Score'].mean().reset_index()
+    # Chuẩn hóa để tránh lỗi key viết thường
+    df_temp = df.copy()
+    if 'parental_involvement' in df_temp.columns:
+        df_temp['Parental_Involvement'] = df_temp['parental_involvement']
     
-    sns.barplot(x='Parental_Involvement', y='Exam_Score', data=avg_scores)
+    # Đảm bảo thứ tự hiển thị hợp lý
+    order_list = ['low', 'medium', 'high']
+    if df_temp['Parental_Involvement'].iloc[0].istitle():
+        order_list = ['Low', 'Medium', 'High']
+        
+    avg_scores = df_temp.groupby('Parental_Involvement')['Exam_Score'].mean().reindex(order_list).reset_index()
     
-    plt.title("Điểm trung bình theo sự tham gia của phụ huynh", fontsize=14)
-    plt.xlabel("Sự tham gia của phụ huynh")
-    plt.ylabel("Điểm trung bình (Exam Score)")
+    sns.barplot(x='Parental_Involvement', y='Exam_Score', data=avg_scores, palette='Blues', ax=ax, edgecolor='#374151', linewidth=1)
+    
+    # Thêm số liệu cụ thể trên cột
+    for p in ax.patches:
+        ax.annotate(f"{p.get_height():.2f}", (p.get_x() + p.get_width() / 2., p.get_height() - 5),
+                    ha='center', va='center', color='white', fontweight='bold', fontsize=11)
+                    
+    ax.set_title("Điểm Trung Bình Theo Sự Tham Gia Của Phụ Huynh", fontsize=15, fontweight='bold', pad=15, color='#111827')
+    ax.set_xlabel("Sự tham gia của phụ huynh", fontsize=11, fontweight='medium')
+    ax.set_ylabel("Điểm trung bình (Exam Score)", fontsize=11, fontweight='medium')
+    ax.set_ylim(0, 100)
     
     plt.savefig(EDA_DIR / 'avg_score_by_parental_involment.png', dpi=300, bbox_inches='tight')
-    plt.close()
-
+    plt.close(fig)
+    return fig
 
 # ================== 7. SCATTER PLOT VỚI REGRESSION: TỶ LỆ THAM GIA VS ĐIỂM ==================
 def plot_attendance_vs_score(df):
-    plt.figure(figsize=(8,6))
+    fig, ax = plt.subplots(figsize=(9, 6))
     
-    sns.regplot(x='Attendance', y='Exam_Score', data=df, scatter_kws={'alpha':0.5})
+    sns.regplot(x='Attendance', y='Exam_Score', data=df, scatter_kws={'alpha':0.4, 'color': '#10B981'}, 
+                line_kws={'color': '#EF4444', 'linewidth': 2.5}, ax=ax)
     
-    plt.title("Mối quan hệ giữa tỷ lệ tham gia và điểm số", fontsize=14)
-    plt.xlabel("Tỷ lệ tham gia (%)")
-    plt.ylabel("Điểm số (Exam Score)")
+    ax.set_title("Mối Quan Hệ Giữa Tỷ Lệ Tham Gia Học Lớp Và Điểm Số", fontsize=15, fontweight='bold', pad=15, color='#111827')
+    ax.set_xlabel("Tỷ lệ tham gia (%)", fontsize=11, fontweight='medium')
+    ax.set_ylabel("Điểm số (Exam Score)", fontsize=11, fontweight='medium')
     
     plt.savefig(EDA_DIR / 'attendance_vs_score.png', dpi=300, bbox_inches='tight')
-    plt.close()
-
+    plt.close(fig)
+    return fig
 
 # ================== 8. COUNT PLOT: MỨC ĐỘ ĐỘNG VIÊN ==================
 def plot_motivation_level_distribution(df):
-    plt.figure(figsize=(8,6))
+    fig, ax = plt.subplots(figsize=(8, 6))
     
-    sns.countplot(x='Motivation_Level', data=df, order=['Low', 'Medium', 'High'])
+    # Chuẩn hóa để tránh lỗi key viết thường
+    df_temp = df.copy()
+    if 'motivation_level' in df_temp.columns:
+        df_temp['Motivation_Level'] = df_temp['motivation_level']
+        
+    order_list = ['low', 'medium', 'high']
+    if df_temp['Motivation_Level'].iloc[0].istitle():
+        order_list = ['Low', 'Medium', 'High']
+        
+    sns.countplot(x='Motivation_Level', data=df_temp, order=order_list, palette='viridis', ax=ax, edgecolor='#374151', linewidth=1)
     
-    plt.title("Phân phối mức độ động viên", fontsize=14)
-    plt.xlabel("Mức độ động viên")
-    plt.ylabel("Số lượng học sinh")
+    # Hiển thị số lượng trên cột
+    for p in ax.patches:
+        ax.annotate(f"{int(p.get_height())}", (p.get_x() + p.get_width() / 2., p.get_height() + 50),
+                    ha='center', va='bottom', color='#374151', fontweight='bold')
+                    
+    ax.set_title("Phân Phối Mức Độ Động Lực Học Tập", fontsize=15, fontweight='bold', pad=15, color='#111827')
+    ax.set_xlabel("Mức độ động lực", fontsize=11, fontweight='medium')
+    ax.set_ylabel("Số lượng học sinh", fontsize=11, fontweight='medium')
     
     plt.savefig(EDA_DIR / 'motivation_level_distribution.png', dpi=300, bbox_inches='tight')
-    plt.close()
-
+    plt.close(fig)
+    return fig
 
 # ================== 10. PAIR PLOT ==================
 def plot_pair_plot(df):
-    plt.figure(figsize=(12,10))
-    
     # Chọn một số cột quan trọng để vẽ pair plot
     selected_cols = ['Hours_Studied', 'Attendance', 'Previous_Scores', 'Sleep_Hours', 'Exam_Score']
-    g = sns.pairplot(df[selected_cols], diag_kind='kde', plot_kws={'alpha': 0.6})
-    g.fig.suptitle("Pair Plot của Các Biến Quan Trọng", y=1.02, fontsize=14)
-
-    g.fig.savefig(EDA_DIR / 'pair_plot.png', dpi=300, bbox_inches='tight')
-    plt.close()
-
+    
+    # pairplot trả về PairGrid chứ không phải figure đơn
+    g = sns.pairplot(df[selected_cols], diag_kind='kde', plot_kws={'alpha': 0.5, 'color': '#3B82F6'})
+    g.fig.suptitle("Biểu Đồ Cặp Tương Quan (Pair Plot) Các Biến Quan Trọng", y=1.02, fontsize=16, fontweight='bold', color='#111827')
+    
+    g.savefig(EDA_DIR / 'pair_plot.png', dpi=300, bbox_inches='tight')
+    fig = g.fig
+    plt.close(fig)
+    return fig
 
 # ================== 11. ACTUAL VS PREDICTED ==================
 def plot_actual_vs_predicted(y_actual, y_predicted, model_name="Random Forest"):
-
     from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
-    import numpy as np
-
-    # Tính metrics
+    
+    # Tính toán các metrics đánh giá
     r2 = r2_score(y_actual, y_predicted)
     mae = mean_absolute_error(y_actual, y_predicted)
     rmse = np.sqrt(mean_squared_error(y_actual, y_predicted))
     mape = np.mean(np.abs((y_actual - y_predicted) / y_actual)) * 100 if np.all(y_actual != 0) else np.nan
-
+    
     residuals = y_actual - y_predicted
     bias = np.mean(residuals)
-
-    # Tạo figure
-    plt.figure(figsize=(10, 8))
-
-    # Scatter plot với density coloring
-    scatter = plt.scatter(y_actual, y_predicted,
-                          alpha=0.7,
-                          c=residuals,
-                          cmap='coolwarm',
-                          edgecolors='k',
-                          s=50)
-
-    # Đường hoàn hảo (y = x)
+    
+    fig, ax = plt.subplots(figsize=(10, 8))
+    
+    # Scatter plot biểu thị giá trị thực tế vs dự đoán
+    scatter = ax.scatter(y_actual, y_predicted, alpha=0.6, c=residuals, cmap='coolwarm', edgecolors='k', linewidths=0.5, s=55)
+    
+    # Đường chéo hoàn hảo (y = x)
     min_val = min(y_actual.min(), y_predicted.min())
     max_val = max(y_actual.max(), y_predicted.max())
-    plt.plot([min_val, max_val], [min_val, max_val], 'r--', lw=2.5, label='Đường hoàn hảo (y = x)')
-
-    # Thêm regression line (dự đoán thực tế)
-    sns.regplot(x=y_actual, y=y_predicted,
-                scatter=False,
-                line_kws={'color': 'blue', 'alpha': 0.8, 'linestyle': '-'},
-                label='Regression Line')
-
-    plt.colorbar(scatter, label='Residual (Actual - Predicted)')
-
-    # Thêm text box với metrics
-    metrics_text = f"""
-    Model: {model_name}
-    R² Score     = {r2:.4f}
-    MAE          = {mae:.2f}
-    RMSE         = {rmse:.2f}
-    MAPE         = {mape:.2f}%
-    Bias         = {bias:.2f}
-    Samples      = {len(y_actual)}
-    """
-
-    plt.text(0.02, 0.98, metrics_text,
-             transform=plt.gca().transAxes,
-             fontsize=11,
-             verticalalignment='top',
-             bbox=dict(boxstyle="round,pad=0.5", facecolor="white", alpha=0.9, edgecolor='gray'))
-
-    # Labels và Title
-    plt.title("Actual vs Predicted Exam Scores\n(with Model Performance Metrics)",
-              fontsize=16, pad=20)
-    plt.xlabel("Actual Exam Score", fontsize=12)
-    plt.ylabel("Predicted Exam Score", fontsize=12)
-
-    plt.legend(loc='lower right')
-    plt.grid(True, alpha=0.3)
-
-    # Thêm annotation cho vùng tốt / kém
-    plt.annotate('Over-predicted', xy=(max_val * 0.3, max_val * 0.7),
-                 xytext=(max_val * 0.2, max_val * 0.85),
-                 arrowprops=dict(arrowstyle='->', color='red', alpha=0.6))
-    plt.annotate('Under-predicted', xy=(max_val * 0.7, max_val * 0.3),
-                 xytext=(max_val * 0.75, max_val * 0.15),
-                 arrowprops=dict(arrowstyle='->', color='blue', alpha=0.6))
-
-    plt.tight_layout()
-
-    # Lưu file
+    ax.plot([min_val, max_val], [min_val, max_val], 'r--', lw=2.5, label='Đường hoàn hảo (y = x)')
+    
+    # Đường hồi quy thực tế dự đoán
+    sns.regplot(x=y_actual, y=y_predicted, scatter=False, color='#2563EB', ax=ax, line_kws={'linestyle': '-'}, label='Regression Line')
+    
+    fig.colorbar(scatter, label='Sai số (Phần dư: Actual - Predicted)')
+    
+    # Hộp chứa thông số hiệu năng
+    metrics_text = (
+        f"Mô hình: {model_name}\n"
+        f"R² Score     = {r2:.4f}\n"
+        f"MAE          = {mae:.2f}\n"
+        f"RMSE         = {rmse:.2f}\n"
+        f"MAPE         = {mape:.2f}%\n"
+        f"Độ lệch (Bias) = {bias:.2f}\n"
+        f"Tổng số mẫu  = {len(y_actual)}"
+    )
+    
+    ax.text(0.03, 0.97, metrics_text, transform=ax.transAxes, fontsize=11, fontweight='medium',
+             verticalalignment='top', bbox=dict(boxstyle="round,pad=0.5", facecolor="#F9FAFB", alpha=0.95, edgecolor='#D1D5DB'))
+             
+    ax.set_title("So Sánh Điểm Thi Thực Tế vs Điểm Số Dự Đoán", fontsize=16, fontweight='bold', pad=20, color='#111827')
+    ax.set_xlabel("Điểm Thực Tế (Actual Exam Score)", fontsize=12, fontweight='medium')
+    ax.set_ylabel("Điểm Dự Đoán (Predicted Exam Score)", fontsize=12, fontweight='medium')
+    ax.legend(loc='lower right', frameon=True, facecolor='white', edgecolor='#D1D5DB')
+    
     plt.savefig(EVAL_DIR / 'actual_vs_predicted.png', dpi=300, bbox_inches='tight')
-    plt.close()
-
-    return r2, mae, rmse  # Trả về metrics để sử dụng sau
+    plt.close(fig)
+    return fig
 
 # ================== 12. RESIDUALS PLOT ==================
 def plot_residuals(y_actual, y_predicted):
     residuals = y_actual - y_predicted
-    plt.figure(figsize=(8,6))
+    fig, ax = plt.subplots(figsize=(9, 6))
     
-    plt.scatter(y_predicted, residuals, alpha=0.6, edgecolors='k')
-    plt.axhline(y=0, color='r', linestyle='--', lw=2)
+    ax.scatter(y_predicted, residuals, alpha=0.6, color='#8B5CF6', edgecolors='white', s=50)
+    ax.axhline(y=0, color='#EF4444', linestyle='--', lw=2.5)
     
-    plt.title("Biểu đồ Phần dư", fontsize=14)
-    plt.xlabel("Giá trị Dự đoán")
-    plt.ylabel("Phần dư (Residuals)")
-    plt.grid(True, alpha=0.3)
+    ax.set_title("Biểu Đồ Phần Dư (Residuals Plot)", fontsize=15, fontweight='bold', pad=15, color='#111827')
+    ax.set_xlabel("Giá trị Dự đoán (Predicted Values)", fontsize=11, fontweight='medium')
+    ax.set_ylabel("Phần dư (Residuals: Actual - Predicted)", fontsize=11, fontweight='medium')
     
     plt.savefig(EVAL_DIR / 'residuals.png', dpi=300, bbox_inches='tight')
-    plt.close()
-
+    plt.close(fig)
+    return fig
 
 # ================== 13. PREDICTION ERRORS DISTRIBUTION ==================
 def plot_prediction_errors(y_actual, y_predicted):
     errors = y_actual - y_predicted
-    plt.figure(figsize=(8,6))
+    fig, ax = plt.subplots(figsize=(9, 6))
     
-    sns.histplot(errors, kde=True, bins=20)
+    sns.histplot(errors, kde=True, bins=20, color='#EC4899', edgecolor='white', alpha=0.8, ax=ax)
+    ax.axvline(x=0, color='#EF4444', linestyle='--', lw=2, label='Sai số = 0')
+    ax.legend(frameon=True, facecolor='white')
     
-    plt.title("Phân phối Lỗi Dự đoán", fontsize=14)
-    plt.xlabel("Lỗi Dự đoán")
-    plt.ylabel("Tần số")
-    plt.axvline(x=0, color='r', linestyle='--', lw=2, label='Lỗi = 0')
-    plt.legend()
+    ax.set_title("Biểu Đồ Phân Phối Sai Số Dự Đoán", fontsize=15, fontweight='bold', pad=15, color='#111827')
+    ax.set_xlabel("Giá trị Sai Số", fontsize=11, fontweight='medium')
+    ax.set_ylabel("Tần suất xuất hiện", fontsize=11, fontweight='medium')
     
     plt.savefig(EVAL_DIR / 'prediction_eror_distribution.png', dpi=300, bbox_inches='tight')
-    plt.close()
-
+    plt.close(fig)
+    return fig
 
 # ================== 14. FEATURE IMPORTANCE ==================
-def plot_feature_importance(feature_importance, title="Feature Importance"):
-    """
-    Vẽ biểu đồ độ quan trọng của các đặc trưng.
-    Hỗ trợ cả dictionary và tuple (feature_names, importances)
-    """
-    import matplotlib.pyplot as plt
-    import seaborn as sns
-    import pandas as pd
-
-    # Nếu truyền vào là dictionary
+def plot_feature_importance(feature_importance, title="Feature Importance - Random Forest"):
     if isinstance(feature_importance, dict):
         importance_df = pd.DataFrame({
             'Feature': list(feature_importance.keys()),
             'Importance': list(feature_importance.values())
         })
     else:
-        # Nếu truyền vào là 2 biến riêng
         feature_names, importances = feature_importance
         importance_df = pd.DataFrame({
             'Feature': feature_names,
             'Importance': importances
         })
-
-    # Sắp xếp theo độ quan trọng giảm dần
+        
     importance_df = importance_df.sort_values('Importance', ascending=False)
-
-    plt.figure(figsize=(10, 8))
+    
+    fig, ax = plt.subplots(figsize=(10, 8))
+    
+    # Sử dụng bảng màu gradient để thể hiện mức độ quan trọng
     sns.barplot(
         x='Importance',
         y='Feature',
         data=importance_df,
-        hue='Feature',
         palette='viridis',
-        legend = False
+        ax=ax,
+        edgecolor='#374151',
+        linewidth=0.5
     )
-
-    plt.title(title, fontsize=16)
-    plt.xlabel('Importance Score')
-    plt.ylabel('Features')
+    
+    ax.set_title(title, fontsize=16, fontweight='bold', pad=20, color='#111827')
+    ax.set_xlabel('Điểm số Độ quan trọng (Importance Score)', fontsize=12, fontweight='medium')
+    ax.set_ylabel('Các Đặc Trưng (Features)', fontsize=12, fontweight='medium')
+    
     plt.tight_layout()
-
     plt.savefig(EVAL_DIR / 'feature_importance.png', dpi=300, bbox_inches='tight')
-    plt.close()
+    plt.close(fig)
+    return fig
+
 # ================== 15. MODEL PERFORMANCE METRICS ==================
 def plot_model_metrics(metrics_dict):
-    """
-    Vẽ biểu đồ các chỉ số hiệu suất mô hình
-    metrics_dict: dict với các chỉ số như {'MAE': 0.5, 'MSE': 0.3, 'R2': 0.85, ...}
-    """
-    plt.figure(figsize=(10, 6))
+    fig, ax = plt.subplots(figsize=(9, 6))
     
     metrics_names = list(metrics_dict.keys())
     metrics_values = list(metrics_dict.values())
     
-    bars = sns.barplot(x=metrics_names, y=metrics_values, hue=metrics_names, palette='husl', legend=False)
+    bars = sns.barplot(x=metrics_names, y=metrics_values, palette='husl', ax=ax, edgecolor='#374151', linewidth=1)
     
-    # Hiển thị giá trị trên mỗi cột
+    # Hiển thị chính xác giá trị số trên từng cột
     for bar in bars.patches:
         height = bar.get_height()
-        bars.text(bar.get_x() + bar.get_width()/2., height,
-                 f'{height:.3f}',
-                 ha='center', va='bottom')
+        ax.annotate(f'{height:.4f}',
+                    xy=(bar.get_x() + bar.get_width() / 2, height),
+                    xytext=(0, 3),  # offset 3 points vertical
+                    textcoords="offset points",
+                    ha='center', va='bottom', fontweight='bold', fontsize=11)
+                    
+    ax.set_title("Các Chỉ Số Hiệu Suất Mô Hình", fontsize=15, fontweight='bold', pad=15, color='#111827')
+    ax.set_ylabel("Giá trị", fontsize=11, fontweight='medium')
     
-    plt.title("Các Chỉ số Hiệu suất Mô hình", fontsize=14)
-    plt.ylabel("Giá trị")
-    plt.ylim(0, 2)
+    # Giới hạn trục Y linh hoạt
+    max_val = max(metrics_values)
+    ax.set_ylim(0, max_val * 1.15)
     
     plt.savefig(EVAL_DIR / 'model_metrics.png', dpi=300, bbox_inches='tight')
-    plt.close()
-
+    plt.close(fig)
+    return fig
 
 # ================== 16. CROSS-VALIDATION SCORES ==================
 def plot_cv_scores(cv_scores):
-    """
-    Vẽ biểu đồ điểm Cross-Validation
-    cv_scores: array các điểm từ cross-validation
-    """
-    plt.figure(figsize=(10, 6))
+    fig, ax = plt.subplots(figsize=(9, 6))
     
-    plt.plot(cv_scores, marker='o', linestyle='-', linewidth=2, markersize=8)
-    plt.axhline(y=cv_scores.mean(), color='r', linestyle='--', lw=2, 
-                label=f'Trung bình = {cv_scores.mean():.3f}')
-    plt.fill_between(range(len(cv_scores)), cv_scores.min(), cv_scores.max(), alpha=0.2)
+    ax.plot(cv_scores, marker='o', linestyle='-', linewidth=2.5, markersize=8, color='#3B82F6', label='R² Score từng Fold')
+    ax.axhline(y=cv_scores.mean(), color='#EF4444', linestyle='--', lw=2.5, 
+                label=f'R² Trung bình = {cv_scores.mean():.4f}')
+                
+    ax.fill_between(range(len(cv_scores)), cv_scores.min(), cv_scores.max(), alpha=0.15, color='#3B82F6')
     
-    plt.title("Điểm Cross-Validation", fontsize=14)
-    plt.xlabel("Fold")
-    plt.ylabel("Điểm")
-    plt.legend()
-    plt.grid(True, alpha=0.3)
+    ax.set_title("Kết Quả Đánh Giá Chéo (Cross-Validation Scores)", fontsize=15, fontweight='bold', pad=15, color='#111827')
+    ax.set_xlabel("Lần Lặp (Fold / Iteration)", fontsize=11, fontweight='medium')
+    ax.set_ylabel("Hệ số Xác định R²", fontsize=11, fontweight='medium')
+    ax.set_xticks(range(len(cv_scores)))
+    ax.set_xticklabels([f"Fold {i+1}" for i in range(len(cv_scores))])
+    ax.legend(loc='lower left', frameon=True, facecolor='white', edgecolor='#D1D5DB')
     
     plt.savefig(EVAL_DIR / 'cv_scores.png', dpi=300, bbox_inches='tight')
-    plt.close()
+    plt.close(fig)
+    return fig

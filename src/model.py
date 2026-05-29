@@ -12,6 +12,22 @@ from pathlib import Path
 MODEL_DIR = Path(__file__).parent.parent / 'models'
 MODEL_DIR.mkdir(parents=True, exist_ok=True)
 
+ORDINAL_MAPS = {
+    'Parental_Involvement': {'low': 0, 'medium': 1, 'high': 2},
+    'Access_to_Resources': {'low': 0, 'medium': 1, 'high': 2},
+    'Motivation_Level': {'low': 0, 'medium': 1, 'high': 2},
+    'Family_Income': {'low': 0, 'medium': 1, 'high': 2},
+    'Teacher_Quality': {'low': 0, 'medium': 1, 'high': 2},
+    'Parental_Education_Level': {'high school': 0, 'college': 1, 'postgraduate': 2},
+    'Distance_from_Home': {'near': 0, 'moderate': 1, 'far': 2},
+    'Peer_Influence': {'negative': 0, 'neutral': 1, 'positive': 2},
+    'Extracurricular_Activities': {'no': 0, 'yes': 1},
+    'Internet_Access': {'no': 0, 'yes': 1},
+    'School_Type': {'public': 0, 'private': 1},
+    'Learning_Disabilities': {'no': 0, 'yes': 1},
+    'Gender': {'male': 0, 'female': 1}
+}
+
 def preprocess_data(df):
     """
     Tiền xử lý dữ liệu: mã hóa categorical, chuẩn bị features và target
@@ -19,20 +35,24 @@ def preprocess_data(df):
     # Sao chép dataframe để không ảnh hưởng gốc
     df_processed = df.copy()
 
-    # Mã hóa các cột categorical
+    # Mã hóa các cột categorical bằng ORDINAL_MAPS
     categorical_cols = df_processed.select_dtypes(include=['object']).columns
-    label_encoders = {}
 
     for col in categorical_cols:
-        le = LabelEncoder()
-        df_processed[col] = le.fit_transform(df_processed[col])
-        label_encoders[col] = le
+        if col in ORDINAL_MAPS:
+            df_processed[col] = df_processed[col].map(ORDINAL_MAPS[col]).fillna(-1).astype(int)
+        else:
+            # Fallback nếu xuất hiện cột phân loại mới
+            from sklearn.preprocessing import LabelEncoder
+            le = LabelEncoder()
+            df_processed[col] = le.fit_transform(df_processed[col])
+            ORDINAL_MAPS[col] = le
 
     # Tách features và target
     X = df_processed.drop('Exam_Score', axis=1)
     y = df_processed['Exam_Score']
 
-    return X, y, label_encoders
+    return X, y, ORDINAL_MAPS
 
 def train_model(X, y, label_encoders=None):
     """
@@ -90,17 +110,27 @@ def predict_new_data(model, new_data, label_encoders):
     # Sao chép để không ảnh hưởng gốc
     new_data_processed = new_data.copy()
 
+    # Chuẩn hóa cột phân loại: lowercase và strip trước
+    for col in new_data_processed.columns:
+        if new_data_processed[col].dtype == 'object':
+            new_data_processed[col] = new_data_processed[col].astype(str).str.strip().str.lower()
+
     # Mã hóa categorical
-    for col, le in label_encoders.items():
+    for col, mapper in label_encoders.items():
         if col in new_data_processed.columns:
-            new_data_processed[col] = new_data_processed[col].map(
-                lambda x: le.transform([x])[0] if x in le.classes_ else -1
-            )
+            if isinstance(mapper, dict):
+                # Mã hóa bằng từ điển mapping (ORDINAL_MAPS)
+                new_data_processed[col] = new_data_processed[col].map(mapper).fillna(-1).astype(int)
+            else:
+                # Mã hóa bằng LabelEncoder (fallback)
+                new_data_processed[col] = new_data_processed[col].map(
+                    lambda x: mapper.transform([x])[0] if x in mapper.classes_ else -1
+                )
 
     # Đồng bộ cột theo thứ tự model đã học
     if hasattr(model, 'feature_names_in_'):
         expected_cols = list(model.feature_names_in_)
-        # Thêm cột thiếu với giá trị 0
+        # Thêm cột thiếu với giá trị mặc định (để là 0)
         for col in expected_cols:
             if col not in new_data_processed.columns:
                 new_data_processed[col] = 0
