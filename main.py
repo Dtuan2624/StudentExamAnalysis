@@ -3,6 +3,12 @@ import pandas as pd
 from src import clean_data
 from src import visualize
 from src import model
+import sys
+
+# Cấu hình stdout để hỗ trợ hiển thị tiếng Việt trên Windows
+if sys.platform.startswith('win'):
+    import io
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 
 # Example usage
@@ -29,7 +35,7 @@ if __name__ == "__main__":
     # Mô hình hóa và dự đoán
     print("\n=== MÔ HÌNH HÓA VÀ DỰ ĐOÁN ===")
     X, y, label_encoders = model.preprocess_data(df)
-    trained_model, metrics, cv_scores, X_test, y_test, y_pred = model.train_model(X, y)
+    trained_model, metrics, cv_scores, X_test, y_test, y_pred = model.train_model(X, y, label_encoders=label_encoders)
 
     print("Các chỉ số hiệu suất mô hình:")
     for metric, value in metrics.items():
